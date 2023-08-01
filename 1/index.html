@@ -1,0 +1,2406 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+          <div class="header__logo">
+            <a href="/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="55"
+                height="40"
+                viewBox="0 0 55 40"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.7039 5.45221L17.3522 10.9067L18.4078 11.9815L19.4634 13.0562L23.9016 8.53753L28.3401 4.01852L34.6158 10.4034L40.8914 16.7879L41.949 15.7111L43.0066 14.6344L35.8161 7.31862C31.8612 3.29493 28.4975 0.00172347 28.3407 6.29814e-07C28.1842 -0.00143507 25.6476 2.45189 22.7039 5.45221ZM9.87088 21.5329V35.8899H4.93544H0V37.4692V39.0484H6.48658H12.9732L12.9737 26.4861L12.9746 13.9237L13.8192 14.9287L14.6639 15.9337L14.6647 27.6496L14.6653 39.3657L16.1459 39.2787L17.6266 39.192L17.7007 29.2139C17.7416 23.7258 17.8812 19.2358 18.0112 19.2358C18.141 19.2358 18.9326 19.9789 19.7702 20.8868L21.2929 22.5379L21.4339 30.7214L21.5749 38.9049H28.3435H35.1121L35.19 34.7264L35.2675 30.548L37.2346 28.5607L39.2015 26.5734V32.9545V39.3356H40.7526H42.3038V31.3456V23.356L43.0088 22.6815L43.7139 22.007V30.5339V39.0605L49.2839 38.9827L54.8539 38.9049V37.4692V36.0335L50.835 35.9539L46.8162 35.8741V25.4015C46.8162 19.6415 46.72 14.9287 46.6027 14.9287C46.4851 14.9287 43.1854 18.1923 39.27 22.181L32.1509 29.4333V32.6616V35.8899H28.3435H24.5362V28.7852V21.6805L17.417 14.4282C13.5017 10.4395 10.202 7.17591 10.0844 7.17591C9.96705 7.17591 9.87088 13.6366 9.87088 21.5329ZM25.1002 12.2009V13.493H26.3693H27.6385V12.2009V10.9087H26.3693H25.1002V12.2009ZM29.0486 12.2009V13.493H30.3177H31.5868V12.2009V10.9087H30.3177H29.0486V12.2009ZM25.1002 16.0936V17.546L26.2988 17.4575L27.4974 17.3694L27.5835 16.0055L27.6695 14.6415H26.3849H25.1002V16.0936ZM29.1036 16.0055L29.1896 17.3694L30.3882 17.4575L31.5868 17.546V16.0936V14.6415H30.3022H29.0176L29.1036 16.0055Z"
+                  fill="white"
+                />
+              </svg>
+              <div class="header__logo-text">
+                <h5>skyline</h5>
+                <p>real estate</p>
+              </div>
+            </a>
+          </div>
+          <label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+            >
+              <path
+                d="M6.80418 1.70017C5.45074 1.70017 4.15274 2.23785 3.19572 3.19493C2.2387 4.15201 1.70105 5.45008 1.70105 6.8036C1.70105 8.15711 2.2387 9.45519 3.19572 10.4123C4.15274 11.3693 5.45074 11.907 6.80418 11.907C8.15762 11.907 9.45562 11.3693 10.4126 10.4123C11.3697 9.45519 11.9073 8.15711 11.9073 6.8036C11.9073 5.45008 11.3697 4.15201 10.4126 3.19493C9.45562 2.23785 8.15762 1.70017 6.80418 1.70017ZM4.20296e-08 6.8036C0.000155072 5.7207 0.258744 4.65348 0.754277 3.69063C1.24981 2.72777 1.96797 1.8971 2.84908 1.26764C3.7302 0.638181 4.7488 0.228114 5.82026 0.0715213C6.89171 -0.0850715 7.98506 0.0163317 9.00945 0.367304C10.0338 0.718275 10.9597 1.30868 11.71 2.08945C12.4603 2.87022 13.0135 3.8188 13.3235 4.85636C13.6335 5.89393 13.6915 6.99051 13.4925 8.05496C13.2935 9.11942 12.8434 10.121 12.1795 10.9765L16.7612 15.5585C16.9162 15.7189 17.0019 15.9338 17 16.1568C16.998 16.3798 16.9086 16.5932 16.7509 16.7509C16.5932 16.9086 16.3799 16.998 16.1569 17C15.9339 17.0019 15.719 16.9162 15.5586 16.7612L10.9768 12.1792C9.97106 12.9601 8.76636 13.4431 7.49971 13.5733C6.23306 13.7034 4.95531 13.4756 3.81174 12.9155C2.66818 12.3555 1.70469 11.4858 1.03085 10.4053C0.357015 9.32487 -0.000141459 8.07699 4.20296e-08 6.8036Z"
+                fill="white"
+                fill-opacity="0.25"
+              />
+            </svg>
+            <input type="text" placeholder="Найти недвижимость" />
+          </label>
+          <nav>
+            <ul>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li>
+                <a href="#"
+                  >Избранное
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="14"
+                    viewBox="0 0 16 14"
+                    fill="none"
+                  >
+                    <path
+                      id="Vector"
+                      d="M4.86515 0.500868L4.86512 0.500868C3.63173 0.475266 2.4328 1.01765 1.65509 1.93892C0.163217 3.70625 -0.0681118 6.79617 2.06442 8.51831L2.07727 8.52868L2.0894 8.53988L7.09533 13.1601L7.09536 13.1601C7.58626 13.6133 8.41295 13.6133 8.90385 13.1601L8.90388 13.1601L13.9096 8.53989L13.9218 8.52865L13.9347 8.51825C16.0681 6.79606 15.837 3.70619 14.3451 1.93891C13.5663 1.01756 12.3674 0.475286 11.1339 0.500866L4.86515 0.500868ZM4.86515 0.500868C5.83121 0.520871 6.8127 1.05265 7.61812 2.00266L7.99946 2.45246M4.86515 0.500868L7.99946 2.45246M7.99946 2.45246L8.38085 2.00271M7.99946 2.45246L8.38085 2.00271M8.38085 2.00271C9.18645 1.0527 10.1678 0.52106 11.1339 0.500868L8.38085 2.00271Z"
+                      stroke="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__currency-wrapper dropdown-wrapper">
+            <p>Валюта:</p>
+            <div class="dropdown">
+              <h4 class="dropdown-selcted">UAH</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="5"
+                viewBox="0 0 10 5"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 3.8474L9.09884 0.139834C9.30499 -0.0466112 9.63923 -0.0466112 9.84538 0.139834C10.0515 0.326279 10.0515 0.628565 9.84538 0.81501L5.37327 4.86017C5.16712 5.04661 4.83288 5.04661 4.62673 4.86017L0.154614 0.81501C-0.0515394 0.628565 -0.0515394 0.326279 0.154614 0.139834C0.360768 -0.0466112 0.69501 -0.0466112 0.901163 0.139834L5 3.8474Z"
+                  fill="#BCBFC2"
+                />
+              </svg>
+              <div class="dropdown-options">
+                <p class="dropdown-option">UAH</p>
+                <p class="dropdown-option">RUB</p>
+                <p class="dropdown-option">USD</p>
+                <p class="dropdown-option">EUR</p>
+              </div>
+            </div>
+          </div>
+          <div class="header__lang-wrapper dropdown-wrapper">
+            <p>Язык:</p>
+            <div class="dropdown">
+              <h4 class="dropdown-selcted">UA</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="5"
+                viewBox="0 0 10 5"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 3.8474L9.09884 0.139834C9.30499 -0.0466112 9.63923 -0.0466112 9.84538 0.139834C10.0515 0.326279 10.0515 0.628565 9.84538 0.81501L5.37327 4.86017C5.16712 5.04661 4.83288 5.04661 4.62673 4.86017L0.154614 0.81501C-0.0515394 0.628565 -0.0515394 0.326279 0.154614 0.139834C0.360768 -0.0466112 0.69501 -0.0466112 0.901163 0.139834L5 3.8474Z"
+                  fill="#BCBFC2"
+                />
+              </svg>
+              <div class="dropdown-options">
+                <p class="dropdown-option">UA</p>
+                <p class="dropdown-option">RU</p>
+                <p class="dropdown-option">US</p>
+              </div>
+            </div>
+          </div>
+          <div class="header__consultation">
+            <a href="#">
+              <img
+                src="./assets/img/header/consultation.png"
+                alt="consultation"
+              />
+              <h5>Бесплатная консультация</h5>
+            </a>
+          </div>
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="header__menu">
+          <div class="wrapper">
+            <ul>
+              <li>
+                  <a href="/"><span>Главная</span></a>
+              </li>
+              <li class="collapsed">
+                <a href="#">
+                    <span>Каталог</span>
+                </a>
+              </li>
+              <li class="collapsed">
+                <a href="#">
+                    <span>Услуги</span>
+                </a>
+              </li>
+              <li class="collapsed">
+                <a href="#">
+                    <span>Сотрудничество</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><span>О компании</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Отзывы</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Контакты</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Блог</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__submenu">
+          <div class="wrapper">
+            <ul>
+                <li><a href="#">По странам</a></li>
+                <li><a href="#">Для инвестиций</a></li>
+                <li><a href="#">Для жизни и отдыха</a></li>
+                <li><a href="#">Каталог недвижимости</a></li>
+                <li><a href="#">Поиск недвижимости</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">По странам2</a></li>
+              <li><a href="#">Для инвестиций</a></li>
+              <li><a href="#">Для жизни и отдыха</a></li>
+              <li><a href="#">Каталог недвижимости</a></li>
+              <li><a href="#">Поиск недвижимости</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">По странам3</a></li>
+              <li><a href="#">Для инвестиций</a></li>
+              <li><a href="#">Для жизни и отдыха</a></li>
+              <li><a href="#">Каталог недвижимости</a></li>
+              <li><a href="#">Поиск недвижимости</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__menu-contacts">
+          <div class="wrapper">
+            <div class="header__menu-left">
+              <div class="header__menu-left-cont">
+                <h6>Контакты:</h6>
+                <h4><a href="tel:+43766454337">+43 766 454 337</a></h4>
+                <p>Каждый день с 9:00 до 19:00 </p>
+              </div>
+              <div class="header__menu-left-soc">
+                <h6>Наши социальные сети:</h6>
+                <ul>
+                  <li><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 50 50" width="50px" height="50px">
+                      <path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445 c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758 c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125 c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077 C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                      <g clip-path="url(#clip0_843_22005)">
+                        <path d="M15.5913 27V14.6849H19.7233L20.3433 9.88411H15.5913V6.81948C15.5913 5.42997 15.9756 4.48303 17.9704 4.48303L20.5105 4.48199V0.18796C20.0712 0.130876 18.5634 0 16.8084 0C13.1437 0 10.6348 2.2369 10.6348 6.34401V9.88411H6.49023V14.6849H10.6348V27H15.5913Z" fill="white"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_843_22005">
+                          <rect width="27" height="27" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a></li>
+                  <li><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                      <g clip-path="url(#clip0_843_22010)">
+                        <path d="M19.6913 0H7.30865C3.2786 0 0 3.2786 0 7.30865V19.6915C0 23.7214 3.2786 27 7.30865 27H19.6915C23.7214 27 27 23.7214 27 19.6915V7.30865C27 3.2786 23.7214 0 19.6913 0ZM13.5 20.8826C9.42915 20.8826 6.11739 17.5709 6.11739 13.5C6.11739 9.4291 9.4291 6.11739 13.5 6.11739C17.5709 6.11739 20.8826 9.4291 20.8826 13.5C20.8826 17.5709 17.5709 20.8826 13.5 20.8826ZM21.0591 7.85846C19.8561 7.85846 18.8777 6.87998 18.8777 5.67695C18.8777 4.47392 19.8561 3.49533 21.0591 3.49533C22.2621 3.49533 23.2407 4.47398 23.2407 5.67695C23.2407 6.87992 22.2621 7.85846 21.0591 7.85846Z" fill="white"/>
+                        <path d="M21.0596 5.07837C20.7296 5.07837 20.4609 5.34705 20.4609 5.67701C20.4609 6.00702 20.7296 6.27565 21.0596 6.27565C21.3897 6.27565 21.6584 6.00723 21.6584 5.67701C21.6584 5.34684 21.3897 5.07837 21.0596 5.07837Z" fill="white"/>
+                        <path d="M9.25684 13.5004C9.25684 11.1608 11.1603 9.25757 13.4997 9.25757C15.8393 9.25757 17.7426 11.1608 17.7426 13.5004C17.7426 15.8398 15.8393 17.7433 13.4997 17.7433C11.1603 17.7433 9.25684 15.8398 9.25684 13.5004Z" fill="white"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_843_22010">
+                          <rect width="27" height="27" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__menu-right">
+              <a href="#">
+              <img src="./assets/img/header/consultation.png" alt="consultation">
+              <span>Заказать индивидуальный подбор</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    <main>
+        <section class="hero">
+            <img id="heroImage" src="./assets/img/hero/hero.jpg" alt="hero">
+            <div class="wrapper">
+                <div class="hero__top">
+                    <div class="hero__left">
+                        <h1>мсмммммм</h1>
+                        <p><span class="bodily">с полным<br>
+                            сопровождением</span><br>
+                            до и после покупки
+                        </p>
+                    </div>
+                    <div class="hero__right">
+                        <ul>
+                            <li>
+                                <h4><span class="bodily">6</span> стран</h4>
+                                <p>в которых мы работаем</p>
+                            </li>
+                            <li>
+                                <h4><span class="bodily">230</span> объектов</h4>
+                                <p>продаётся на портале</p>
+                            </li>
+                            <li>
+                                <h4><span class="bodily">45%</span> годовых</h4>
+                                <p>приносит нашим клиентам</p>
+                            </li>
+                            <li>
+                                <h4><span class="bodily">5</span> лет</h4>
+                                <p>средний срок рассрочки</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hero__bottom">
+                    <a href="#">Найти новостройку</a>
+                    <a href="#">Подберем недвижимость</a>
+                    <a href="#">Новостройки для инвестиций</a>
+                    <a href="#">Новостройки для жизни</a>
+                </div>
+            </div>
+        </section>
+        <section class="countries">
+            <div class="wrapper">
+                <div class="countries__text">
+                    <h2>Мы предлагаем недвижимость <span>в странах</span></h2>
+                    <div class="hover-cursor">
+                        <p><span>Наведите мышку,</span><br>и нажмите на карточку</p>
+                    </div>
+                </div>
+                <div class="countries__items">
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_1.jpg" alt="country">
+                            <p>Северный Кипр</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_2.jpg" alt="country">
+                            <p>ОАЭ</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_3.jpg" alt="country">
+                            <p>CША</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_4.jpg" alt="country">
+                            <p>Грузия</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_5.jpg" alt="country">
+                            <p>Испания</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_6.jpg" alt="country">
+                            <p>Турция</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="objects">
+            <div class="wrapper">
+                <div class="objects__top">
+                    <h2>Выберите <span>подходящий объект</span></h2>
+                    <a href="#">Смотреть все</a>
+                </div>
+                <div class="objects__tabset">
+                    <input type="radio" name="tabset" id="tab1" checked>
+                    <label for="tab1">Акционные предложения</label>
+
+                    <input type="radio" name="tabset" id="tab2">
+                    <label for="tab2">Квартиры</label>
+
+                    <input type="radio" name="tabset" id="tab3">
+                    <label for="tab3">Апартаменты</label>
+
+                    <input type="radio" name="tabset" id="tab4">
+                    <label for="tab4">Таунхаусы</label>
+
+                    <input type="radio" name="tabset" id="tab5">
+                    <label for="tab5">Виллы</label>
+
+                    <input type="radio" name="tabset" id="tab6">
+                    <label for="tab6">Дома</label>
+
+                    <div class="objects__tab-panels">
+                        <div class="objects__tab-panel">
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_1.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Новое</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_2.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Новое</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_3.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Новое</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_4.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Новое</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_5.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Новое</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_6.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Новое</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_7.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Новое</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_8.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Новое</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="objects__tab-panel">
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_1.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Квартиры</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_1.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Квартиры</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_1.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Квартиры</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_1.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Квартиры</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_1.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Квартиры</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_1.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Квартиры</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_1.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Квартиры</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_1.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Квартиры</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="objects__tab-panel">
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_2.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Апартаменты</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_2.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Апартаменты</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_2.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Апартаменты</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_2.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Апартаменты</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_2.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Апартаменты</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_2.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Апартаменты</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_2.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Апартаменты</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_2.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Апартаменты</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA В 2 СТРОКИ</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="objects__tab-panel">
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_3.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Таунхаусы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_3.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Таунхаусы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_3.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Таунхаусы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_3.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Таунхаусы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_3.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Таунхаусы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_3.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Таунхаусы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_3.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Таунхаусы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_3.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Таунхаусы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="objects__tab-panel">
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_4.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Виллы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_4.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Виллы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_4.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Виллы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_4.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Виллы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_4.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Виллы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_4.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Виллы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_4.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Виллы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_4.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Виллы</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="objects__tab-panel">
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_5.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Дома</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_5.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Дома</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_5.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Дома</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_5.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Дома</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_5.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Дома</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_5.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Дома</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_5.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Дома</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="objects__item">
+                                <a href="#">
+                                    <img src="./assets/img/objects/apartment_5.jpg" alt="apartment">
+                                    <div class="objects__tags">
+                                        <ul>
+                                            <li>Дома</li>
+                                            <li>Бизнес-класс</li>
+                                        </ul>
+                                    </div>
+                                    <div class="objects__text">
+                                        <h3>ЖК PENINSULA</h3>
+                                        <div class="objects__country">
+                                            <img src="assets/img/objects/countries/turkey.svg" alt="country">
+                                            <span>Турция, Аланья</span>
+                                        </div>
+                                    </div>
+                                    <div class="objects__price">
+                                        <h4>от 110 000 $</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="wrapper">
+                <h2>Купить недвижимость с SKYLINE <span>просто и удобно за 6 шагов</span></h2>
+            </div>
+            <div class="steps__container">
+                <div class="wrapper">
+                    <div class="steps__list">
+                      <div class="steps__step active">
+                        <div class="steps__square"></div>
+                        <div class="steps__info">
+                            <div class="steps__info-top">
+                                <img src="assets/img/steps/step_1.png" alt="step_image">
+                                <h4>ПОДБОР</h4>
+                            </div>
+                            <p>Находите самостоятельно или подбираем лучшие предложения по запросам</p>
+                            <span>/ 01</span>
+                        </div>
+                        <span>Шаг 1</span>
+                    </div>
+                    <div class="steps__step">
+                        <div class="steps__square"></div>
+                        <div class="steps__info">
+                            <div class="steps__info-top">
+                                <img src="assets/img/steps/step_2.png" alt="step_image">
+                                <h4>ПРЕЗЕНТАЦИЯ</h4>
+                            </div>
+                            <p>Знакомим вас с объектами и эксклюзивными условиями от застройщика</p>
+                            <span>/ 02</span>
+                        </div>
+                        <span>Шаг 2</span>
+                    </div>
+                    <div class="steps__step">
+                        <div class="steps__square"></div>
+                        <div class="steps__info">
+                            <div class="steps__info-top">
+                                <img src="assets/img/steps/step_3.png" alt="step_image">
+                                <h4>КОНСУЛЬТАЦИЯ</h4>
+                            </div>
+                            <p>Специалист отвечает на все интересующие вопросы, связанные с покупкой или переездом</p>
+                            <span>/ 03</span>
+                        </div>
+                        <span>Шаг 3</span>
+                    </div>
+                    <div class="steps__step">
+                        <div class="steps__square"></div>
+                        <div class="steps__info">
+                            <div class="steps__info-top">
+                                <img src="assets/img/steps/step_4.png" alt="step_image">
+                                <h4>БРОНИРОВАНИЕ</h4>
+                            </div>
+                            <p>Отсрочьте покупку, забронировав объект за собой на 30 дней</p>
+                            <span>/ 04</span>
+                        </div>
+                        <span>Шаг 4</span>
+                    </div>
+                    <div class="steps__step">
+                        <div class="steps__square"></div>
+                        <div class="steps__info">
+                            <div class="steps__info-top">
+                                <img src="assets/img/steps/step_5.png" alt="step_image">
+                                <h4>ДОКУМЕНТАЦИЯ</h4>
+                            </div>
+                            <p>Подготавливаем все необходимые договора и сопутствующие документы по запросу</p>
+                            <span>/ 05</span>
+                        </div>
+                        <span>Шаг 5</span>
+                    </div>
+                    <div class="steps__step">
+                        <div class="steps__square"></div>
+                        <div class="steps__info">
+                            <div class="steps__info-top">
+                                <img src="assets/img/steps/step_6.png" alt="step_image">
+                                <h4>ПОСТСОПРОВОЖДЕНИЕ</h4>
+                            </div>
+                            <p>Помогаем с обустройством на новом месте: покупка автомобиля, поиск школы для ребёнка и тд</p>
+                            <span>/ 06</span>
+                        </div>
+                        <span>Шаг 6</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+          <div class="wrapper">
+            <h2><span>Преимущества</span> SKYLINE для Вас</h2>
+            <div class="advantages__cards">
+              <div class="advantages__card">
+                <div class="advantages__content">
+                  <p>
+                    <span>137 летний</span><br>
+                    суммарный<br>
+                    опыт команды
+                  </p>
+                  <img src="./assets/img/advantages/1.png" alt="card photo">
+                </div>
+              </div>
+              <div class="advantages__card">
+                <div class="advantages__content">
+                  <p>
+                    <span>Дарим 2 000$</span><br>
+                    на покупку новостройки
+                  </p>
+                  <img src="./assets/img/advantages/2.png" alt="card photo">
+                </div>
+              </div>
+              <div class="advantages__card">
+                <div class="advantages__content">
+                  <p>
+                    Подбор<br> объектов<br>
+                    <span> за 1 час</span>
+                  </p>
+                  <img src="./assets/img/advantages/3.png" alt="card photo">
+                </div>
+              </div>
+              <div class="advantages__card">
+                <div class="advantages__content">
+                  <p>
+                    <span>0%</span> рассрочка
+                  <br>от застройщика
+                </p>
+                  <img src="./assets/img/advantages/4.png" alt="card photo">
+                </div>
+              </div>
+              <div class="advantages__card">
+                <div class="advantages__content">
+                  <p><span>Обширный каталог </span> 
+                    новостроек 
+                    от застройщика</p>
+                  <img src="./assets/img/advantages/5.png" alt="card photo">
+                </div>
+              </div>
+              <div class="advantages__card">
+                <div class="advantages__content">
+                  <p>Полностью <span>бесплатные услуги</span> наших специалистов</p>
+                  <img src="./assets/img/advantages/6.png" alt="card photo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="wrapper">
+            <div class="questions__text">
+              <h2><span>Сэкономьте до 10 часов своего времени</span> на поиске <span>идеального варианта</span> новостройки</h2>
+              <p>Ответьте на 7 вопросов и мы <span>подберем для Вас 10 варантов,</span> которые идеально Вам подойдут</p>
+            </div>
+            <div class="questions__content">
+              <div class="questions__left">
+                <img src="assets/img/questions/man.jpg" alt="man">
+                <div class="questions__about">
+                  <p>Здравствуйте, меня зовут Алексей Ломиков, и я помогу
+                    вам просчитать суму выплаты по недвижимости согласно
+                    вашим критериям.</p>
+                  <span>Ответьте на несколько простых вопросов справа!</span>
+                  <h6>После ответов на 5 вопросов получите</h6>
+                  <div class="questions__pdfs">
+                    <div class="questions__pdf">
+                      <div class="questions__pdf-image">
+                        <img src="assets/img/questions/pdf_1.png" alt="pdf">
+                      </div>
+                      <div class="questions__pdf-text">
+                        <h6>PDF - предложение</h6>
+                        <p>По рассрочке<br> в выбранной вами стране</p>
+                      </div>
+                    </div>
+                    <div class="questions__pdf">
+                      <div class="questions__pdf-image">
+                        <img src="assets/img/questions/pdf_2.png" alt="pdf">
+                      </div>
+                      <div class="questions__pdf-text">
+                        <h6>PDF - предложение</h6>
+                        <p>ТОП-5 застройщиков<br> с лучшими процентными ставками</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__right">
+                <div class="questions__quest-block">
+                  <p>Вопрос 1 из 6</p>
+                  <div class="questions__progress-parent">
+                    <span class="questions__progress"></span>
+                  </div>
+                </div>
+                <h3>Какой тип недвижимости ищете?</h3>
+                <div class="questions__items">
+                  <div class="questions__item active">
+                    <img src="assets/img/questions/variant_1.jpg" alt="variant">
+                    <div class="questions__item-text">
+                      <input type="radio" name="variant1" checked id="variant1_1">
+                      <label for="variant1_1"></label>
+                      <h6>Вариант 1</h6>
+                      <p>Описание варианта</p>
+                    </div>
+                  </div>
+                  <div class="questions__item">
+                    <img src="assets/img/questions/variant_2.jpg" alt="variant">
+                    <div class="questions__item-text">
+                      <input type="radio" name="variant1" id="variant1_2">
+                      <label for="variant1_2"></label>
+                      <h6>Вариант 1</h6>
+                      <p>Описание варианта</p>
+                    </div>
+                  </div>
+                  <div class="questions__item">
+                    <img src="assets/img/questions/variant_3.jpg" alt="variant">
+                    <div class="questions__item-text">
+                      <input type="radio" name="variant1" id="variant1_3">
+                      <label for="variant1_3"></label>
+                      <h6>Вариант 1</h6>
+                      <p>Описание варианта</p>
+                    </div>
+                  </div>
+                  <div class="questions__item">
+                    <img src="assets/img/questions/variant_4.jpg" alt="variant">
+                    <div class="questions__item-text">
+                    <input type="radio" name="variant1" id="variant1_4">
+                    <label for="variant1_4"></label>
+                    <h6>Вариант 1</h6>
+                    <p>Описание варианта</p>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__controls">
+                <div class="hover-cursor">
+                  <p><span>Выберите вариант ответа</span><br>и нажмите кнопку «Далее»</p>
+                </div>
+                <div class="questions__buttons">
+                  <button class="questions__prev">← Назад</button>
+                  <button class="questions__next">Далее →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="facts">
+          <div class="wrapper">
+            <h2>Познакомьтесь с нами узнав <span>7 фактов о проекте</span></h2>
+            <div class="facts__items">
+              <div class="facts__item item">
+                <div class="item__border">
+                  <div class="item__top">
+                    <h4>Каталог</h4>
+                    <p class="item__number">/01</p>
+                  </div>
+                  <p class="item__text">Все новостройки 6 стран в 1-м месте благодаря нашему каталогу</p>
+                  <a href="#" class="item__link">
+                    <span>Смотреть список стран</span>
+                    <div class="item__arrow"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="facts__item item">
+                <div class="item__border">
+                  <div class="item__top">
+                    <h4>Подбор</h4>
+                    <p class="item__number">/02</p>
+                  </div>
+                  <p class="item__text">Индивидуально поможем подобрать недвижимость под любой бюджет</p>
+                  <a href="#" class="item__link">
+                    <span>Заказать подбор</span>
+                    <div class="item__arrow"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="facts__item item">
+                <div class="item__border">
+                  <div class="item__top">
+                    <h4>Выгоды</h4>
+                    <p class="item__number">/03</p>
+                  </div>
+                  <p class="item__text">Найдем недвижимость по самым выгодным условиям для вас </p>
+                  <a href="#" class="item__link">
+                    <span>Заказать подбор</span>
+                    <div class="item__arrow"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="facts__item item">
+                <div class="item__border">
+                  <div class="item__top">
+                    <h4>Сопровождение</h4>
+                    <p class="item__number">/04</p>
+                  </div>
+                  <p class="item__text">Удобное сопровождение на пути к Вашей мечте - от выбора недвижимости до адаптации в местную жизнь. Помогаем закрыть все сопутствующие вопросы по покупке недвижимости и переезде в другую страну.</p>
+                  <a href="#" class="item__link">
+                    <span>Смотреть список услуг</span>
+                    <div class="item__arrow"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="facts_item item_active">
+                <div class="item__border">
+                  <div class="item__noise">
+                    <div class="item__info">
+                      <h4>Есть вопросы по поиску 
+                      и покупке недвижимости?</h4>
+                      <p class="item__text">У нас есть ответы на любые вопросы 
+                        связанные с поиском, покупкой недвижимости 
+                        или смежными сферами</p>
+                      <button type="button" class="item__button">Задать вопрос</button>
+                    </div>
+                    <div class="item__bio">
+                      <h5>Наталия</h5>
+                      <p>Эксперт <br>
+                        по недвижимости</p>
+                    </div>
+                    <img src="./assets/img/for-life/girl.png" alt="girl">
+                  </div>
+                </div>
+              </div>
+              <div class="facts__item item">
+                <div class="item__border">
+                  <div class="item__top">
+                    <h4>Комисия агенства 0%</h4>
+                    <p class="item__number">/05</p>
+                  </div>
+                  <p class="item__text">Бесплатные услуги нашей компании  при покупке недвижимости - от выбора квартиры до адаптации в местную жизнь.</p>
+                  <a href="#" class="item__link">
+                    <span>Найти недвижимость</span>
+                    <div class="item__arrow"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="facts__item item">
+                <div class="item__border">
+                  <div class="item__top">
+                    <h4>Консультация</h4>
+                    <p class="item__number">/06</p>
+                  </div>
+                  <p class="item__text">Индивидуально поможем подобрать недвижимость под любой бюджет</p>
+                  <a href="#" class="item__link">
+                    <span>Записаться на консультацию</span>
+                    <div class="item__arrow"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="facts__item item">
+                <div class="item__border">
+                  <div class="item__top">
+                    <h4>Рассрочка</h4>
+                    <p class="item__number">/07</p>
+                  </div>
+                  <p class="item__text">Поможем взять рассрочку с 0% на любую недвижимость 
+                    без переплат и комиссий</p>
+                  <a href="#" class="item__link">
+                    <span>Записаться на консультацию</span>
+                    <div class="item__arrow"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bonus">
+          <div class="bonus__border">
+            <div class="bonus__container">
+              <div class="bonus__data">
+                <h2>Закажите <span>индивидуальный подбор</span></h2>
+                <p>Сэкономьте свое время и доверьте подбор недвижимости нашим менеджерам</p>
+                <div class="bonus__items">
+                  <div class="bonus__item">
+                    <img src="./assets/img/catalog/svg-gobbler.svg" alt="icon comleted">
+                    <p>Подберем <span>10 вариантов</span> новостроек</p>
+                  </div>
+                  <div class="bonus__item">
+                    <img src="./assets/img/catalog/svg-gobbler.svg" alt="icon comleted">
+                    <p>Бесплатно <span>проконсультируем</span> по вопросам покупки</p>
+                  </div>
+                    <div class="bonus__item">
+                      <img src="./assets/img/catalog/svg-gobbler.svg" alt="icon comleted">
+                      <p>Отправим <span>готовый список объектов</span> для покупки</p>
+                    </div>
+                </div>
+                <div class="bonus__form">
+                  <form>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="tel" id="phone" name="phone" >
+                    <button class="button" type="submit">Заказать подбор</button>
+                  </form>
+                </div>
+              </div>
+              <div class="bonus__bio">
+                <h4>Алик<br> Понтрор</h4>
+                <p>Эксперт <br>по недвижимости</p>
+                <img src="./assets/img/male.png" alt="male">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="help">
+          <div class="wrapper">
+            <h2><span>Поможем с рассрочкой</span> от застройщиков</h2>
+            <div class="help__body">
+              <div class="help__list">
+                <div class="help__card">
+                  <div class="help__border">
+                    <img src="./assets/img/catalog/catalog__help_item1.png" alt="help card image">
+                    <p>99+ застройщиков</p>
+                    <span>в 6 партнерских странах</span>
+                  </div>
+                </div>
+                <div class="help__card">
+                  <div class="help__border">
+                    <img src="./assets/img/catalog/catalog__help_item2.png" alt="help card image">
+                    <p>Первый взнос</p>
+                    <span>от 10% стоимости</span>
+                  </div>
+                </div>
+                <div class="help__card">
+                  <div class="help__border">
+                    <img src="./assets/img/catalog/catalog__help_item3.png" alt="help card image">
+                    <p>Безопасные сделки</p>
+                    <span>с гарантией покупки</span>
+                  </div>
+                </div>
+                <div class="help__card">
+                  <div class="help__border">
+                    <img src="./assets/img/catalog/catalog__help_item4.png" alt="help card image">
+                    <p>Полное сопровождение </p>
+                    <span>в 6 партнерских странах</span>
+                  </div>
+                </div>
+              </div>
+              <div class="help__calc">
+                <p><span>Рассчитайте размер</span> регулярного платежа по рассрочке самостоятельно</p>
+                <p>Сэкономьте время и узнайте всю информацию об рассрочке от застройщика с помощью нашего калькулятора</p>
+                <button type="button" class="help__button button">Калькулятор рассрочки</button>
+              </div>
+            </div>
+            <div class="help__footer">
+              <p>Вот почему <span>рассрочка выгоднее</span> ипотеки</p>
+              <div class="help__item">
+                <span>/01</span>
+                <p>Вы владелец новостройки с первого дня оформления</p>
+              </div>
+              <div class="help__item">
+                <span>/02</span>
+                <p>Не нужно работать с банками и системой бюрократии</p>
+              </div>
+              <div class="help__item">
+                <span>/03</span>
+                <p>Без комиссий банков и ежегодных % на кредит</p>
+              </div>
+              <div class="help__item">
+                <span>/04</span>
+                <p>98,5% вероятности получить рассрочку не резидентам</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="details-team">
+          <div class="wrapper">
+            <h2><span>Знакомьтесь</span> с нашей командой</h2>
+            <div class="details-team__container">
+              <div class="details-team__images">
+                <div class="details-team__item" data-index="0">
+                  <img
+                    src="assets/img/slider/male.jpg"
+                    class="details-team__small"
+                    alt="photo"
+                  >
+                  <p>Дамир Абдулин</p>
+                </div>
+                <div class="details-team__item" data-index="1">
+                  <img
+                    src="assets/img/slider/sales-manage.jpg"
+                    class="details-team__small"
+                    alt="photo"
+                  >
+                  <p>Иван Иванович</p>
+                </div>
+                <div class="details-team__item" data-index="2">
+                  <img
+                    src="assets/img/slider/male.jpg"
+                    class="details-team__small"
+                    alt="photo"
+                  >
+                  <p>Дамир Абдулин</p>
+                </div>
+                <div class="details-team__item" data-index="3">
+                  <img
+                    src="assets/img/slider/sales-manage.jpg"
+                    class="details-team__small"
+                    alt="photo"
+                  >
+                  <p>Иван Иванович</p>
+                </div>
+              </div>
+              <div class="details-team__data data">
+                <img src="assets/img/slider/male.jpg" alt="photo" class="data__img">
+                <div class="data__inf">
+                  <div class="data__bio">
+                    <p>Дамир Абдулин</p>
+                    <p>/ Генеральний директор, основатель</p>
+                  </div>
+                  <p>Открыто заявляю, что я <span>гарантирую и беру на себя полную ответственность</span> перед вами за:</p>
+                  <div class="data__cards">
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Легальность и юридическую чистоту всех сделок</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Прозрачность условий, которые не меняются в ходе сотрудничества</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Надёжность и качество услуг наших специалистов и партнеров</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Сопровождение даже после совершения сделки купли-продажи</p>
+                    </div>
+                  </div>
+                  <div class="data__message">
+                    <p>Познакомьтесь <span>с владельцем компании</span> и задайте свои вопросы напрямую</p>
+                    <div class="data__photo">
+                      <img src="assets/img/slider/female.png" alt="photo female">
+                    </div>
+                    <a href="#" class="data__button">Написать в Messеnger</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="details-team__data data">
+                <img src="assets/img/slider/sales-manage.jpg" alt="photo" class="data__img">
+                <div class="data__inf">
+                  <div class="data__bio">
+                    <p>Иван Иванович</p>
+                    <p>/ Менеджер с продаж</p>
+                  </div>
+                  <p>Открыто заявляю, что я <span>гарантирую и беру на себя полную ответственность</span> перед вами за:</p>
+                  <div class="data__cards">
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Легальность и юридическую чистоту всех сделок</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Прозрачность условий, которые не меняются в ходе сотрудничества</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Надёжность и качество услуг наших специалистов и партнеров</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Сопровождение даже после совершения сделки купли-продажи</p>
+                    </div>
+                  </div>
+                  <div class="data__message">
+                    <p>Познакомьтесь <span>с владельцем компании</span> и задайте свои вопросы напрямую</p>
+                    <div class="data__photo">
+                      <img src="assets/img/slider/female.png" alt="photo female">
+                    </div>
+                    <a href="#" class="data__button">Написать в Messеnger</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="details-team__data data">
+                <img src="assets/img/slider/male.jpg" alt="photo" class="data__img">
+                <div class="data__inf">
+                  <div class="data__bio">
+                    <p>Дамир Абдулин</p>
+                    <p>/ Генеральний директор, основатель</p>
+                  </div>
+                  <p>Открыто заявляю, что я <span>гарантирую и беру на себя полную ответственность</span> перед вами за:</p>
+                  <div class="data__cards">
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Легальность и юридическую чистоту всех сделок</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Прозрачность условий, которые не меняются в ходе сотрудничества</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Надёжность и качество услуг наших специалистов и партнеров</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Сопровождение даже после совершения сделки купли-продажи</p>
+                    </div>
+                  </div>
+                  <div class="data__message">
+                    <p>Познакомьтесь <span>с владельцем компании</span> и задайте свои вопросы напрямую</p>
+                    <div class="data__photo">
+                      <img src="assets/img/slider/female.png" alt="photo female">
+                    </div>
+                    <a href="#" class="data__button">Написать в Messеnger</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="details-team__data data">
+                <img src="assets/img/slider/sales-manage.jpg" alt="photo" class="data__img">
+                <div class="data__inf">
+                  <div class="data__bio">
+                    <p>Иван Иванович</p>
+                    <p>/ Менеджер с продаж</p>
+                  </div>
+                  <p>Открыто заявляю, что я <span>гарантирую и беру на себя полную ответственность</span> перед вами за:</p>
+                  <div class="data__cards">
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Легальность и юридическую чистоту всех сделок</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Прозрачность условий, которые не меняются в ходе сотрудничества</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Надёжность и качество услуг наших специалистов и партнеров</p>
+                    </div>
+                    <div class="data__card">
+                      <img src="assets/img/slider/svg-gobbler.svg" alt="icon check">
+                      <p>Сопровождение даже после совершения сделки купли-продажи</p>
+                    </div>
+                  </div>
+                  <div class="data__message">
+                    <p>Познакомьтесь <span>с владельцем компании</span> и задайте свои вопросы напрямую</p>
+                    <div class="data__photo">
+                      <img src="assets/img/slider/female.png" alt="photo female">
+                    </div>
+                    <a href="#" class="data__button">Написать в Messеnger</a>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+          
+
+        </section>
+        <section class="catalog">
+          <img 
+            src="assets/img/hand.png"
+            alt="image hand"
+            class="catalog__hand"
+          >
+          <div class="catalog__border">
+            <div class="wrapper">
+              <div class="catalog__container">
+                <div class="catalog__text">
+                  <p>Скачайте обзорный PDF-каталог 
+                    <span>«ТОП 10 лучших новостроек</span>
+                    для жизни или инвестирования <span>/</span>
+                  </p>
+                  <p><span>со всего мира»</span></p>
+                  <img
+                    src="assets/img/catalog/catalog__catalog.png"
+                    alt="image girl"
+                    class="catalog__girl"
+                  >
+                  <img
+                    src="assets/img/catalog/catalog__catalog-small.png"
+                    alt="image girl"
+                    class="catalog__girl-small"
+                  >
+                </div>
+                <div class="catalog__form">
+                  <form action="">
+                    <h4>Вы подробно ознакомитесь  с самыми нашумевшими  и ажиотажными <span>новостройками на рынке недвижимости</span> всего за 10 минут</h4>
+                    <div class="catalog__items">
+                      <div class="catalog__item">
+                        <img src="assets/img/catalog/svg-gobbler1.svg" alt="icon check">
+                        <p>Вы увидите лучшие предложения по рынку</p>
+                      </div>
+                      <div class="catalog__item">
+                        <img src="assets/img/catalog/svg-gobbler1.svg" alt="icon check">
+                        <p>Не прийдется тратить время на поиск  таких объектов самостоятельно</p>
+                      </div>
+                    </div>
+                    <input type="text" placeholder="Ваше имя" >
+                    <input type="tel" class="input-phone">
+                    <button type="submit" class="button">Получить</button>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> 
+        
+        <section class="services">
+          <div class="wrapper">
+            <h2>Наши услуги</h2>
+            <div class="services__items">
+              <div class="services__item">
+                <p>/ 01</p>
+                <div class="services__content">
+                  <div class="services__image">
+                    <img src="assets/img/services/1.png" alt="services image">
+                    <span>/ 01</span>
+                  </div>
+                  <h4>Консультация</h4>
+                  <p>Бесплатная консультация  от нашей команды по вопросам покупки недвижимости по миру</p>
+                  <a href="#">
+                    <span>Записаться на консультацию</span>
+                    <img src="assets/img/facts_blue_arrow.svg" alt="icon arrow">
+                  </a>
+                </div>
+              </div>
+              <div class="services__item">
+                <p>/ 02</p>
+                <div class="services__content">
+                  <div class="services__image">
+                    <img src="assets/img/services/2.png" alt="services image">
+                    <span>/ 02</span>
+                  </div>
+                  <h4>Подбор недвижимости</h4>
+                  <p>Индивидуальный подбор недвижимости нашим менеджером в соответсвии вашим требованиям </p>
+                  <a href="#">
+                    <span>Индивидуальный подбор</span>
+                    <img src="assets/img/facts_blue_arrow.svg" alt="icon arrow">
+                  </a>
+                </div>
+              </div>
+              <div class="services__item">
+                <p>/ 03</p>
+                <div class="services__content">
+                  <div class="services__image">
+                    <img src="assets/img/services/3.png" alt="services image">
+                    <span>/ 03</span>
+                  </div>
+                  <h4>Инфо-тур</h4>
+                  <p>Интересная и познавательная поездка на место вашей будущей собственности </p>
+                  <a href="#">
+                    <span>Узнать детали инфо-тура</span>
+                    <img src="assets/img/facts_blue_arrow.svg" alt="icon arrow">
+                  </a>
+                </div>
+              </div>
+              <div class="services__item">
+                <p>/ 04</p>
+                <div class="services__content">
+                  <div class="services__image">
+                    <img src="assets/img/services/4.png" alt="services image">
+                    <span>/ 04</span>
+                  </div>
+                  <h4>Забронировать объект</h4>
+                  <p>Возможность убрать объект 
+                    из общего доступа не только 
+                    на нашем сайте, а у застройщика </p>
+                  <a href="#">
+                    <span>Ознакомиться с условиями</span>
+                    <img src="assets/img/facts_blue_arrow.svg" alt="icon arrow">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="qustion-popup">
+          <div class="qustion-popup__content">
+            <h2>Ответы на часто-задаваемые вопросы</h2>
+            <p>Нам часто задавали эти вопросы, поэтому мы собрали экспертные ответы в одном месте для вашего удобства и быстрых ответов</p>
+            <div class="qustion-popup__items">
+              <div class="qustion-popup__item">
+                <div class="qustion-popup__controls">
+                  <p>Why should I give you my VIN number?</p>
+                  <button type="button"></button>
+                </div>
+                <div class="qustion-popup__hidden">
+                  <p>Я гарантирую результат только в том случае, если вы будете двигаться по программе и выполнять все практические домашние задания. Уверен в эффективности программы на 1000%</p>
+                  <p>Более того, если в течение 14 дней с момента старта обучения вы решите, что вам не подходит курс, — мы вернем деньги в полном объеме</p>
+                </div>
+              </div>
+              <div class="qustion-popup__item">
+                <div class="qustion-popup__controls">
+                  <p>Есть ли гарантия результата?</p>
+                  <button></button>
+                </div>
+                <div class="qustion-popup__hidden">
+                  <p>Я гарантирую результат только в том случае, если вы будете двигаться по программе и выполнять все практические домашние задания. Уверен в эффективности программы на 1000%</p>
+                  <p>Более того, если в течение 14 дней с момента старта обучения вы решите, что вам не подходит курс, — мы вернем деньги в полном объеме</p>
+                </div>
+              </div>
+              <div class="qustion-popup__item">
+                <div class="qustion-popup__controls">
+                  <p>Why should I give you my VIN number?</p>
+                  <button type="button"></button>
+                </div>
+                <div class="qustion-popup__hidden">
+                  <p>Я гарантирую результат только в том случае, если вы будете двигаться по программе и выполнять все практические домашние задания. Уверен в эффективности программы на 1000%</p>
+                  <p>Более того, если в течение 14 дней с момента старта обучения вы решите, что вам не подходит курс, — мы вернем деньги в полном объеме</p>
+                </div>
+              </div>
+              <div class="qustion-popup__item">
+                <div class="qustion-popup__controls">
+                  <p>Why should I give you my VIN number?</p>
+                  <button type="button"></button>
+                </div>
+                <div class="qustion-popup__hidden">
+                  <p>Я гарантирую результат только в том случае, если вы будете двигаться по программе и выполнять все практические домашние задания. Уверен в эффективности программы на 1000%</p>
+                  <p>Более того, если в течение 14 дней с момента старта обучения вы решите, что вам не подходит курс, — мы вернем деньги в полном объеме</p>
+                </div>
+              </div>
+              <div class="qustion-popup__item">
+                <div class="qustion-popup__controls">
+                  <p>Why should I give you my VIN number?</p>
+                  <button type="button"></button>
+                </div>
+                <div class="qustion-popup__hidden">
+                  <p>Я гарантирую результат только в том случае, если вы будете двигаться по программе и выполнять все практические домашние задания. Уверен в эффективности программы на 1000%</p>
+                  <p>Более того, если в течение 14 дней с момента старта обучения вы решите, что вам не подходит курс, — мы вернем деньги в полном объеме</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qustion-popup__help">
+            <h3>У Вас ещё <span>остались вопросы?</span></h3>
+            <p>Не нашли ответ на свой вопрос? <span>Задайте его нашему специалисту Наталие,</span> она быстро и бесплатно предоставит Вам консультацию с ответами</p>
+            <div class="qustion-popup__container">
+              <div class="qustion-popup__left">
+                <p>Наталия</p>
+                <p>Менеджер компании</p>
+                <div class="qustion-popup__link">
+                  <a href="#">
+                    <img src="assets/img/icon-message.svg" alt="icon">
+                  </a>
+                </div>
+              </div>
+              <img src="assets/img/female.png" alt="image female">
+            </div>
+          </div>
+        </section>
+        <section class="seo">
+          <div class="wrapper">
+            <h2><span>CEO</span> статья</h2>
+            <div class="seo__text">
+                <p>
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled and demoralized by the charms of
+                  pleasure of the moment, so blinded by desire, that they cannot
+                  foresee the pain and trouble that are bound to ensue; and equal
+                  blame belongs to those who fail in their duty through weakness of
+                  will, which is the same as saying through shrinking from toil and
+                  pain. These cases are perfectly simple and easy to distinguish. In
+                  a free hour, when our power of choice is untrammelled and when
+                  nothing prevents our being able to do what we like best, every pleasure is to be
+                  welcomed and every pain avoided.
+                </p> 
+                <p>
+                  But in certain circumstances and
+                  owing to the claims of duty or the obligations of business it will
+                  frequently occur that pleasures have to be repudiated and
+                  annoyances accepted. The wise man therefore always holds in these
+                  matters to this principle of selection: he rejects pleasures to
+                  secure other greater pleasures, or else he endures pains to avoid
+                  worse pains."
+                </p>
+                
+                <p>
+                  On the other hand, we denounce with righteous
+                  indignation and dislike men who are so beguiled and demoralized by
+                  the charms of pleasure of the moment, so blinded by desire, that
+                  they cannot foresee the pain and trouble that are bound to ensue;
+                  and equal blame belongs to those who fail in their duty through
+                  weakness of will, which is the same as saying through shrinking
+                  from toil and pain. These cases are perfectly simple and easy to
+                  distinguish. In a free hour, when our power of choice is
+                  untrammelled and when nothing prevents
+                </p>
+
+                <p> 
+                  But in certain circumstances and
+                  owing to the claims of duty or the obligations of business it will
+                  frequently occur that pleasures have to be repudiated and
+                  annoyances accepted. The wise man therefore always holds in these
+                  matters to this principle of selection: he rejects pleasures to
+                  secure other greater pleasures, or else he endures pains to avoid
+                  worse pains."<br> On the other hand, we denounce with righteous
+                  indignation and dislike men who are so beguiled and demoralized by
+                  the charms of pleasure of the moment, so blinded by desire, that
+                  they cannot foresee the pain and trouble that are bound to ensue;
+                  and equal blame belongs to those who fail in their duty through
+                  weakness of will, which is the same as saying through shrinking
+                  from toil and pain. These cases are perfectly simple and easy to
+                  distinguish. In a free hour, when our power of choice is
+                  untrammelled and when nothing prevents
+                </p>
+                
+            </div>
+          </div>
+        </section>
+        <section class="new-buildings">
+          <div class="wrapper">
+            <div class="new-buildings__countries">
+              <p class="new-buildings__subtitle">
+                Новостройки по странам
+              </p>
+              <div class="new-buildings__blocks">
+                <div class="new-buildings__block">
+                  <div class="new-buildings__top">
+                    <p>Новостройки
+                      Северный</p>
+                    <button class="new-buildings__button"><img src="assets/img/popup-bottom.svg" alt="icon"></button>
+                  </div>
+                  <ul>
+                    <li><a href="#">Никосия</a></li>
+                    <li><a href="#">Гирне/ Кирения</a></li>
+                    <li><a href="#">Боаз пос.</a></li>
+                    <li><a href="#">Фамагуста</a></li>
+                    <li><a href="#">Искеле</a></li>
+                  </ul>
+                </div>
+                <div class="new-buildings__block">
+                  <div class="new-buildings__top">
+                    <p>Новостройки в Испании</p>
+                    <button class="new-buildings__button"><img src="assets/img/popup-bottom.svg" alt="icon"></button>
+                  </div>
+                  
+                  <ul>
+                    <li><a href="#">Мадрид</a></li>
+                    <li><a href="#">Аликанте</a></li>
+                    <li><a href="#">Малага</a></li>
+                    <li><a href="#">Эль-Йерро</a></li>
+                    <li><a href="#">Ла-Пальма</a></li>
+                  </ul>
+                </div>
+                <div class="new-buildings__block">
+                  <div class="new-buildings__top">
+                    <p>Новостройки в США</p>
+                    <button class="new-buildings__button"><img src="assets/img/popup-bottom.svg" alt="icon"></button>
+                  </div>
+                  
+                  <ul>
+                    <li><a href="#">Вашигтон</a></li>
+                    <li><a href="#">Нью Йорк</a></li>
+                    <li><a href="#">Лос Анджелес</a></li>
+                    <li><a href="#">Калифорния</a></li>
+                    <li><a href="#">Лас-Вегас</a></li>
+                  </ul>
+                </div>
+                <div class="new-buildings__block">
+                  <div class="new-buildings__top">
+                    <p>Новостройки в Турции</p>
+                    <button class="new-buildings__button"><img src="assets/img/popup-bottom.svg" alt="icon"></button>
+                  </div>
+                  
+                  <ul>
+                    <li><a href="#">Стамбул</a></li>
+                    <li><a href="#">Алальня</a></li>
+                    <li><a href="#">Анталия</a></li>
+                    <li><a href="#">Мерсин</a></li>
+                    <li><a href="#">Лас-Вегас</a></li>
+                  </ul>
+                </div>
+                 <div class="new-buildings__block">
+                  <div class="new-buildings__top">
+                    <p>Новостройки в ОАЭ</p>
+                    <button class="new-buildings__button"><img src="assets/img/popup-bottom.svg" alt="icon"></button>
+                  </div>
+                  
+                  <ul>
+                    <li><a href="#">Дубай</a></li>
+                    <li><a href="#">Абу Даби</a></li>
+                    <li><a href="#">Шарджа</a></li>
+                  </ul>
+                </div>
+                <div class="new-buildings__block">
+                  <div class="new-buildings__top">
+                    <p>Новостройки в Грузии</p>
+                    <button class="new-buildings__button"><img src="assets/img/popup-bottom.svg" alt="icon"></button>
+                  </div>
+                  
+                  <ul>
+                    <li><a href="#">Батуми </a></li>
+                    <li><a href="#">Тбилиси</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="new-buildings__cities">
+              <p class="new-buildings__subtitle">
+                Новостройки по городам
+              </p>
+              <ul>
+                <li><a href="#">Новостройки в Никосии</a></li>
+                <li><a href="#">Новостройки в Мадриде</a></li>
+                <li><a href="#">Новостройки в Вашингтоне</a></li>
+                <li><a href="#">Новостройки в Стамбуле</a></li>
+                <li><a href="#">Новостройки в Дубай</a></li>
+                <li><a href="#">Новостройки в Батуми</a></li>
+              </ul>
+            </div>
+            <div class="new-buildings__categories">
+              <p class="new-buildings__subtitle">Новостройки по категориям</p>
+              <ul>
+                <li><a href="#">Квартиры </a></li>
+                <li><a href="#">Таунхаусы</a></li>
+                <li><a href="#">Виллы</a></li>
+                <li><a href="#">Дома</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

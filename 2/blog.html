@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blog</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style-blog.css">
+</head>
+<body>
+<header class="header">
+  <div class="wrapper">
+    <div class="header__logo">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="40" viewBox="0 0 55 40" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22.7039 5.45221L17.3522 10.9067L18.4078 11.9815L19.4634 13.0562L23.9016 8.53753L28.3401 4.01852L34.6158 10.4034L40.8914 16.7879L41.949 15.7111L43.0066 14.6344L35.8161 7.31862C31.8612 3.29493 28.4975 0.00172347 28.3407 6.29814e-07C28.1842 -0.00143507 25.6476 2.45189 22.7039 5.45221ZM9.87088 21.5329V35.8899H4.93544H0V37.4692V39.0484H6.48658H12.9732L12.9737 26.4861L12.9746 13.9237L13.8192 14.9287L14.6639 15.9337L14.6647 27.6496L14.6653 39.3657L16.1459 39.2787L17.6266 39.192L17.7007 29.2139C17.7416 23.7258 17.8812 19.2358 18.0112 19.2358C18.141 19.2358 18.9326 19.9789 19.7702 20.8868L21.2929 22.5379L21.4339 30.7214L21.5749 38.9049H28.3435H35.1121L35.19 34.7264L35.2675 30.548L37.2346 28.5607L39.2015 26.5734V32.9545V39.3356H40.7526H42.3038V31.3456V23.356L43.0088 22.6815L43.7139 22.007V30.5339V39.0605L49.2839 38.9827L54.8539 38.9049V37.4692V36.0335L50.835 35.9539L46.8162 35.8741V25.4015C46.8162 19.6415 46.72 14.9287 46.6027 14.9287C46.4851 14.9287 43.1854 18.1923 39.27 22.181L32.1509 29.4333V32.6616V35.8899H28.3435H24.5362V28.7852V21.6805L17.417 14.4282C13.5017 10.4395 10.202 7.17591 10.0844 7.17591C9.96705 7.17591 9.87088 13.6366 9.87088 21.5329ZM25.1002 12.2009V13.493H26.3693H27.6385V12.2009V10.9087H26.3693H25.1002V12.2009ZM29.0486 12.2009V13.493H30.3177H31.5868V12.2009V10.9087H30.3177H29.0486V12.2009ZM25.1002 16.0936V17.546L26.2988 17.4575L27.4974 17.3694L27.5835 16.0055L27.6695 14.6415H26.3849H25.1002V16.0936ZM29.1036 16.0055L29.1896 17.3694L30.3882 17.4575L31.5868 17.546V16.0936V14.6415H30.3022H29.0176L29.1036 16.0055Z"
+                fill="white"/>
+        </svg>
+        <div class="header__logo-text">
+          <h5>skyline</h5>
+          <p>real estate</p>
+        </div>
+      </a>
+    </div>
+    <label>
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+        <path d="M6.80418 1.70017C5.45074 1.70017 4.15274 2.23785 3.19572 3.19493C2.2387 4.15201 1.70105 5.45008 1.70105 6.8036C1.70105 8.15711 2.2387 9.45519 3.19572 10.4123C4.15274 11.3693 5.45074 11.907 6.80418 11.907C8.15762 11.907 9.45562 11.3693 10.4126 10.4123C11.3697 9.45519 11.9073 8.15711 11.9073 6.8036C11.9073 5.45008 11.3697 4.15201 10.4126 3.19493C9.45562 2.23785 8.15762 1.70017 6.80418 1.70017ZM4.20296e-08 6.8036C0.000155072 5.7207 0.258744 4.65348 0.754277 3.69063C1.24981 2.72777 1.96797 1.8971 2.84908 1.26764C3.7302 0.638181 4.7488 0.228114 5.82026 0.0715213C6.89171 -0.0850715 7.98506 0.0163317 9.00945 0.367304C10.0338 0.718275 10.9597 1.30868 11.71 2.08945C12.4603 2.87022 13.0135 3.8188 13.3235 4.85636C13.6335 5.89393 13.6915 6.99051 13.4925 8.05496C13.2935 9.11942 12.8434 10.121 12.1795 10.9765L16.7612 15.5585C16.9162 15.7189 17.0019 15.9338 17 16.1568C16.998 16.3798 16.9086 16.5932 16.7509 16.7509C16.5932 16.9086 16.3799 16.998 16.1569 17C15.9339 17.0019 15.719 16.9162 15.5586 16.7612L10.9768 12.1792C9.97106 12.9601 8.76636 13.4431 7.49971 13.5733C6.23306 13.7034 4.95531 13.4756 3.81174 12.9155C2.66818 12.3555 1.70469 11.4858 1.03085 10.4053C0.357015 9.32487 -0.000141459 8.07699 4.20296e-08 6.8036Z"
+              fill="white" fill-opacity="0.25"/>
+      </svg>
+      <input type="text" placeholder="Найти недвижимость">
+    </label>
+    <nav>
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Избранное
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+            <path id="Vector"
+                  d="M4.86515 0.500868L4.86512 0.500868C3.63173 0.475266 2.4328 1.01765 1.65509 1.93892C0.163217 3.70625 -0.0681118 6.79617 2.06442 8.51831L2.07727 8.52868L2.0894 8.53988L7.09533 13.1601L7.09536 13.1601C7.58626 13.6133 8.41295 13.6133 8.90385 13.1601L8.90388 13.1601L13.9096 8.53989L13.9218 8.52865L13.9347 8.51825C16.0681 6.79606 15.837 3.70619 14.3451 1.93891C13.5663 1.01756 12.3674 0.475286 11.1339 0.500866L4.86515 0.500868ZM4.86515 0.500868C5.83121 0.520871 6.8127 1.05265 7.61812 2.00266L7.99946 2.45246M4.86515 0.500868L7.99946 2.45246M7.99946 2.45246L8.38085 2.00271M7.99946 2.45246L8.38085 2.00271M8.38085 2.00271C9.18645 1.0527 10.1678 0.52106 11.1339 0.500868L8.38085 2.00271Z"
+                  stroke="white"/>
+          </svg>
+        </a></li>
+      </ul>
+    </nav>
+    <div class="header__consultation">
+      <a href="#">
+        <img src="./assets/img/header/consultation.png" alt="consultation">
+        <h5>Бесплатная консультация</h5>
+      </a>
+    </div>
+    <button class="header__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<main>
+  <img class="main-bg-head" src="./assets/img/blog/blog-bg.png">
+  <section class="object">
+    <div class="wrapper">
+      <div class="blog-info">
+        <h1 class="blog-info__title"><span class="brown">Блог</span> про недвижимость</h1>
+        <div class="blog-info__sub-title">
+          <img src="./assets/img/line.svg">
+          <div><span class="brown">Научитесь покупать и продавать недвижимость по всему миру</span> для жизни или инвестиций, <span class="brown">изучая наши бесплатные материалы в блоге,</span> который ведет специалист с 35 летним опытом в инвестировании и недвижимости </div>
+        </div>
+        <button class="button-red">Заказать подбор</button>
+      </div>
+    </div>
+  </section>
+  <section class="object-transition">
+    <div class="wrapper">
+      <div class="blog-company">
+        <div class="blog-company__current-page">Главная  /  Блог</div>
+        <h1 class="blog-company__title">Блог компании</h1>
+        <ul class="blog-company__menu">
+          <li>Все статьи</li>
+          <li>Для инвесторов</li>
+          <li>Полезное</li>
+          <li>Новости</li>
+          <li>Обучение</li>
+          <li>Видео-обзоры</li>
+        </ul>
+        <div class="blog-company__elements">
+          <div class="blog-company__elements__item">
+            <img class="blog-company__elements__item__img" src="./assets/img/blog/person.png">
+            <div class="blog-company__elements__item__info">
+              <div class="blog-company__elements__item__info__title">Gummi bears jelly-o jelly beans caramel</div>
+              <div class="blog-company__elements__item__info__text">Бесплатная консультация от нашей команды по вопросам покупки недвижимости по миру</div>
+              <div class="blog-company__elements__item__info__status">
+                <div class="blog-company__elements__item__info__status__left">
+                  <div><img src="./assets/img/blog/eye.svg">4532</div>
+                  <div><img src="./assets/img/blog/like.svg">1132</div>
+                </div>
+                <div><img src="./assets/img/blog/sent.svg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-company__elements__item">
+            <img class="blog-company__elements__item__img" src="./assets/img/blog/person.png">
+            <div class="blog-company__elements__item__info">
+              <div class="blog-company__elements__item__info__title">Gummi bears jelly-o jelly beans caramel</div>
+              <div class="blog-company__elements__item__info__text">Бесплатная консультация от нашей команды по вопросам покупки недвижимости по миру</div>
+              <div class="blog-company__elements__item__info__status">
+                <div class="blog-company__elements__item__info__status__left">
+                  <div><img src="./assets/img/blog/eye.svg">4532</div>
+                  <div><img src="./assets/img/blog/like.svg">1132</div>
+                </div>
+                <div><img src="./assets/img/blog/sent.svg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-company__elements__item">
+            <img class="blog-company__elements__item__img" src="./assets/img/blog/person.png">
+            <div class="blog-company__elements__item__info">
+              <div class="blog-company__elements__item__info__title">Gummi bears jelly-o jelly beans caramel</div>
+              <div class="blog-company__elements__item__info__text">Бесплатная консультация от нашей команды по вопросам покупки недвижимости по миру</div>
+              <div class="blog-company__elements__item__info__status">
+                <div class="blog-company__elements__item__info__status__left">
+                  <div><img src="./assets/img/blog/eye.svg">4532</div>
+                  <div><img src="./assets/img/blog/like.svg">1132</div>
+                </div>
+                <div><img src="./assets/img/blog/sent.svg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-company__elements__item">
+            <img class="blog-company__elements__item__img" src="./assets/img/blog/person.png">
+            <div class="blog-company__elements__item__info">
+              <div class="blog-company__elements__item__info__title">Gummi bears jelly-o jelly beans caramel</div>
+              <div class="blog-company__elements__item__info__text">Бесплатная консультация от нашей команды по вопросам покупки недвижимости по миру</div>
+              <div class="blog-company__elements__item__info__status">
+                <div class="blog-company__elements__item__info__status__left">
+                  <div><img src="./assets/img/blog/eye.svg">4532</div>
+                  <div><img src="./assets/img/blog/like.svg">1132</div>
+                </div>
+                <div><img src="./assets/img/blog/sent.svg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="object">
+    <div class="wrapper">
+      <div class="subscribe-blog">
+        <div class="subscribe-blog__vector">
+          <div class="subscribe-blog__vector__info">
+            <h2 class="subscribe-blog__vector__info__title"><span class="brown">Подпишитесь на наш блог</span> и получайте полезные статьи по покупке недвижимости</h2>
+            <ul class="subscribe-blog__vector__info__list">
+              <li><img src="/assets/img/gobbler-white.svg" alt=""><div>9 статей в неделю на темы покупки и продажи недвижимости</div> </li>
+              <li><img src="/assets/img/gobbler-white.svg" alt=""><div>Бесплатная подписка на уникальный контент</div></li>
+              <li><img src="/assets/img/gobbler-white.svg" alt=""><div>Рассылка сразу в Вашем Мессенджере</div></li>
+            </ul>
+            <button class="button-red">Подписаться</button>
+          </div>
+        </div>
+        <img class="subscribe-blog__img" src="./assets/img/blog/phone.png">
+      </div>
+    </div>
+  </section>
+  <section class="object">
+    <div class="wrapper">
+      <div class="seo-article">
+        <h1><span class="brown">СЕО</span> статья</h1>
+        <div class="seo-article__text">
+          On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+          demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+          the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their
+          duty through weakness of will, which is the same as saying through shrinking from toil and pain.
+          These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice
+          is untrammelled and when nothing prevents
+          <br><br>our being able to do what we like best, every pleasure is to be welcomed and every pain
+          avoided. But in certain circumstances and owing to the claims of duty or the obligations of business
+          it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man
+          therefore always holds in these matters to this principle of selection: he rejects pleasures to
+          secure other greater pleasures, or else he endures pains to avoid worse pains."<br><br>
+          On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+          demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+          the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their
+          duty through weakness of will, which is the same as saying through shrinking from toil and pain.
+          These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice
+          is untrammelled and when nothing prevents
+          <br><br>our being able to do what we like best, every pleasure is to be welcomed and every pain
+          avoided. But in certain circumstances and owing to the claims of duty or the obligations of business
+          it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man
+          therefore always holds in these matters to this principle of selection: he rejects pleasures to
+          secure other greater pleasures, or else he endures pains to avoid worse pains."
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="object">
+    <div class="wrapper">
+      <div class="catalog-settings">
+        <div class="catalog-settings__title">
+          Новостройки по странам
+        </div>
+        <div class="catalog-settings__container">
+          <div class="catalog-settings__container__item">
+            <div class="catalog-settings__container__item__title">
+              Новостройки
+              Северный
+            </div>
+            <ul class="catalog-settings__container__item__list">
+              <li>Никосия</li>
+              <li>Гирне/ Кирения</li>
+              <li>Боаз пос.</li>
+              <li>Фамагуста</li>
+              <li>Искеле</li>
+            </ul>
+          </div>
+          <div class="catalog-settings__container__item">
+            <div class="catalog-settings__container__item__title">
+              Новостройки в Испании
+            </div>
+            <ul class="catalog-settings__container__item__list">
+              <li>Мадрид</li>
+              <li>Аликанте</li>
+              <li>Малага</li>
+              <li>Эль-Йерро</li>
+              <li>Ла-Пальма</li>
+            </ul>
+          </div>
+          <div class="catalog-settings__container__item">
+            <div class="catalog-settings__container__item__title">
+              Новостройки в США
+            </div>
+            <ul class="catalog-settings__container__item__list">
+              <li>Вашигтон</li>
+              <li>Нью Йорк</li>
+              <li>Лос Анджелес</li>
+              <li>Калифорния</li>
+              <li>Лас-Вегас</li>
+            </ul>
+          </div>
+          <div class="catalog-settings__container__item">
+            <div class="catalog-settings__container__item__title">
+              Новостройки в Турции
+            </div>
+            <ul class="catalog-settings__container__item__list">
+              <li>Стамбул</li>
+              <li>Алальня</li>
+              <li>Анталия</li>
+              <li>Калифорния</li>
+            </ul>
+          </div>
+          <div class="catalog-settings__container__item">
+            <div class="catalog-settings__container__item__title">
+              Новостройки в ОАЭ
+            </div>
+            <ul class="catalog-settings__container__item__list">
+              <li>Дубай</li>
+              <li>Абу Даби</li>
+              <li>Шарджа</li>
+            </ul>
+          </div>
+          <div class="catalog-settings__container__item">
+            <div class="catalog-settings__container__item__title">
+              Новостройки в Грузии
+            </div>
+            <ul class="catalog-settings__container__item__list">
+              <li>Батуми</li>
+              <li>Тбилиси</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-settings">
+        <div class="catalog-settings__title">
+          Новостройки по городам
+        </div>
+        <div class="catalog-settings__container-mid">
+          <div>Новостройки в Никосии</div>
+          <div>Новостройки в Мадриде</div>
+          <div>Новостройки в Вашингтоне</div>
+          <div>Новостройки в Стамбуле</div>
+          <div>Новостройки в Дубай</div>
+          <div>Новостройки в Батуми</div>
+        </div>
+      </div>
+      <div class="catalog-settings">
+        <div class="catalog-settings__title">
+          Новостройки по категориям
+        </div>
+        <div class="catalog-settings__container-mid">
+          <div>Квартиры</div>
+          <div>Таунхаусы</div>
+          <div>Виллы</div>
+          <div>Дома</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer></footer>
+</body>
+</html>

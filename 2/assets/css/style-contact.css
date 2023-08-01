@@ -1,0 +1,154 @@
+.header {
+  color: #000000;
+  background: #FFFFFF;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.07); }
+  .header input {
+    border: 1px solid #000000; }
+
+main {
+  margin-top: 162px; }
+
+.brown {
+  background: var(--linear, linear-gradient(120deg, #DEA378 0%, #BD9E88 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+hr {
+  height: 1px;
+  background: rgba(22, 22, 22, 0.1);
+  margin-top: 45px; }
+
+.text-preview {
+  color: var(16161650, rgba(22, 22, 22, 0.5));
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px; }
+
+.contact-info {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  gap: 80px;
+  margin-top: 30px; }
+  .contact-info__object {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 420px; }
+
+.contact-message {
+  display: flex;
+  gap: 87px;
+  margin-top: 45px; }
+  .contact-message__networks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+    .contact-message__networks__ico-one {
+      display: flex;
+      gap: 25px; }
+      .contact-message__networks__ico-one img {
+        filter: invert(62%) sepia(31%) saturate(378%) hue-rotate(342deg) brightness(101%) contrast(92%); }
+    .contact-message__networks__ico-two {
+      display: flex;
+      gap: 15px; }
+  .contact-message__number {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    background: var(--linear, linear-gradient(120deg, #001A31 0%, #173A58 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.contact-persons {
+  margin-top: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 46px;
+  justify-content: space-between; }
+  .contact-persons__person {
+    display: flex;
+    gap: 40px; }
+    .contact-persons__person__photo {
+      border-radius: 20px;
+      background: linear-gradient(163deg, #DEA378 0%, #BD9E88 100%);
+      width: 170px;
+      height: 172px;
+      position: relative; }
+      .contact-persons__person__photo img {
+        position: absolute;
+        bottom: 0; }
+    .contact-persons__person__info h4 {
+      margin-bottom: 7px; }
+    .contact-persons__person__info h5 {
+      margin-bottom: 20px; }
+    .contact-persons__person__info a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 258px;
+      height: 64px;
+      border-radius: 5px;
+      background: #E7EFF5; }
+
+.seo-article {
+  padding-right: 50px;
+  margin: 150px 0 100px 0; }
+  .seo-article h1 {
+    margin-bottom: 31px; }
+  .seo-article__text {
+    z-index: 10;
+    color: #161616;
+    font-size: 18px;
+    height: 265px;
+    overflow-y: scroll;
+    font-weight: 400;
+    line-height: 33px; }
+    .seo-article__text::-webkit-scrollbar {
+      width: 3px; }
+    .seo-article__text::-webkit-scrollbar-thumb {
+      background-color: #da0f2a;
+      margin-right: 50px;
+      height: 70px; }
+    .seo-article__text::-webkit-scrollbar-track {
+      height: 70px; }
+    .seo-article__text br {
+      margin-bottom: 30px; }
+
+.catalog-settings {
+  display: flex;
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(22, 22, 22, 0.1);
+  flex-direction: column;
+  gap: 50px; }
+  .catalog-settings__title {
+    color: var(161616, #161616);
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 35px; }
+  .catalog-settings__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 136px; }
+    .catalog-settings__container__item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 140px; }
+      .catalog-settings__container__item__title {
+        color: var(161616, #161616);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 35px; }
+      .catalog-settings__container__item__list {
+        color: rgba(22, 22, 22, 0.7);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px; }
+  .catalog-settings__container-mid {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap; }
