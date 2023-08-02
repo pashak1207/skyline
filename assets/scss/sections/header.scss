@@ -428,7 +428,9 @@
   }
   
   @media screen and (max-width: $screen-lg - 1) {
-    padding: 40px 50px;
+    &__container {
+      padding: 40px 50px;
+    }
 
     &__actions {
       justify-content: flex-end;
@@ -456,7 +458,9 @@
   }
 
   @media screen and (max-width: $screen-sm - 1) {
-    padding: 24px;
+    &__container {
+      padding: 24px;
+    }
 
     &__logo {
       gap: 8px;
