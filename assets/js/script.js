@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //HEADER ONSCROLL//
 
   const header = document.querySelector("header.header");
+  console.log(header);
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
