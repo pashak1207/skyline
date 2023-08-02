@@ -1,3 +1,5 @@
+@import "../variables";
+
 .index {
   width: 100%;
 
@@ -14,6 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
   }
 
   .hero {
@@ -140,6 +143,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 10px;
 
         .item {
           width: calc(calc(100% - 30px) / 4);
@@ -185,6 +189,117 @@
                 z-index: -1;
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-lg - 1) {
+    .hero {
+      padding: 140px 42px 60px;
+
+      &__content {
+        gap: 70px;
+
+        .top-content {
+          flex-direction: column;
+          gap: 50px;
+        }
+
+        .top-content .left-texts {
+          align-items: flex-start;
+          gap: 50px;
+        }
+
+        .top-content .left-texts .title {
+          font-size: 48px;
+          max-width: 600px;
+        }
+
+        .top-content .left-texts .subtitle {
+          margin-left: 30px;
+          max-width: 330px;
+          font-size: 24px;
+
+          &::before {
+            font-size: 24px;
+          }
+        }
+
+        .top-content .advantages-list {
+          width: 100%;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: stretch;
+          gap: 40px 60px;
+          margin-left: 24px;
+
+          .item {
+            min-width: 30%;
+
+            .name {
+              &::before {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+
+        .buttons-list {
+          flex-wrap: wrap;
+
+          .item {
+            width: calc(calc(100% - 10px) / 2);
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: $screen-smd - 1) {
+    .hero {
+      padding: 106px 20px 46px;
+
+      &__content {
+        gap: 30px;
+
+        .top-content {
+          gap: 20px;
+        }
+
+        .top-content .left-texts {
+          gap: 22px;
+        }
+
+        .top-content .left-texts .title {
+          font-size: 30px;
+        }
+
+        .top-content .left-texts .subtitle {
+          margin-left: 30px;
+          max-width: 243px;
+          font-size: 16px;
+        }
+
+        .top-content .advantages-list {
+          width: 100%;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: stretch;
+          gap: 40px 60px;
+          margin-left: 24px;
+
+          .item {
+            min-width: 30%;
+          }
+        }
+
+        .buttons-list {
+          flex-wrap: wrap;
+
+          .item {
+            width: calc(calc(100% - 10px) / 2);
           }
         }
       }
