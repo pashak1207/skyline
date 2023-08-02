@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="index">
+    <!-- HEADER -->
     <header class="header">
+        <!-- Header Visible(always) + Toggle Menu (routing + Contacts) -->
         <div class="header__container visible">
+            <!-- Header Visible(always) -->
             <div class="header__visible">
+                <!-- Logo -->
                 <a href="index.html" class="header__logo">
                     <svg class="img-logo" width="55" height="40" viewBox="0 0 55 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.7039 5.45221L17.3522 10.9067L18.4078 11.9815L19.4634 13.0562L23.9016 8.53753L28.3401 4.01852L34.6158 10.4034L40.8914 16.7879L41.949 15.7111L43.0066 14.6344L35.8161 7.31862C31.8612 3.29493 28.4975 0.00172347 28.3407 6.29814e-07C28.1842 -0.00143507 25.6476 2.45189 22.7039 5.45221ZM9.87088 21.5329V35.8899H4.93544H0V37.4692V39.0484H6.48658H12.9732L12.9737 26.4861L12.9746 13.9237L13.8192 14.9287L14.6639 15.9337L14.6647 27.6496L14.6653 39.3657L16.1459 39.2787L17.6266 39.192L17.7007 29.2139C17.7416 23.7258 17.8812 19.2358 18.0112 19.2358C18.141 19.2358 18.9326 19.9789 19.7702 20.8868L21.2929 22.5379L21.4339 30.7214L21.5749 38.9049H28.3435H35.1121L35.19 34.7264L35.2675 30.548L37.2346 28.5607L39.2015 26.5734V32.9545V39.3356H40.7526H42.3038V31.3456V23.356L43.0088 22.6815L43.7139 22.007V30.5339V39.0605L49.2839 38.9827L54.8539 38.9049V37.4692V36.0335L50.835 35.9539L46.8162 35.8741V25.4015C46.8162 19.6415 46.72 14.9287 46.6027 14.9287C46.4851 14.9287 43.1854 18.1923 39.27 22.181L32.1509 29.4333V32.6616V35.8899H28.3435H24.5362V28.7852V21.6805L17.417 14.4282C13.5017 10.4395 10.202 7.17591 10.0844 7.17591C9.96705 7.17591 9.87088 13.6366 9.87088 21.5329ZM25.1002 12.2009V13.493H26.3693H27.6385V12.2009V10.9087H26.3693H25.1002V12.2009ZM29.0486 12.2009V13.493H30.3177H31.5868V12.2009V10.9087H30.3177H29.0486V12.2009ZM25.1002 16.0936V17.546L26.2988 17.4575L27.4974 17.3694L27.5835 16.0055L27.6695 14.6415H26.3849H25.1002V16.0936ZM29.1036 16.0055L29.1896 17.3694L30.3882 17.4575L31.5868 17.546V16.0936V14.6415H30.3022H29.0176L29.1036 16.0055Z" fill="currentColor"/></svg>
 
@@ -35,6 +39,7 @@
                         >
                     </div>
 
+                    <!-- Desktop Only -->
                     <nav class="header__navbar">
                         <a href="#" class="link">Каталог</a>
                         <a href="#" class="link">Каталог</a>
@@ -45,6 +50,7 @@
                     </nav>
 
                     <div class="header__right-bar">
+                        <!-- Currency -->
                         <div class="select-wrapper">
                             <label for="currency_select">Валюта:</label>
                             <select class="select" name="currency_select" id="currency_select">
@@ -53,7 +59,8 @@
                             </select>
                         </div>
 
-                        <div class="select-wrapper">
+                        <!-- Lang -->
+                        <div class="select-wrapper lang">
                             <label for="lang_select">Язык:</label>
                             <select class="select" name="lang_select" id="lang_select">
                                 <option>RU</option>
@@ -61,6 +68,7 @@
                             </select>
                         </div>
 
+                        <!-- Desktop Only -->
                         <button class="consultation">
                             <img class="agent" src="assets/img/header/consultation.png" alt="Agent">
 
@@ -69,21 +77,18 @@
                             </span>
                         </button>
 
-                        <div class="header__table-actions">
-                            <button class="search-btn" type="button">
-                                <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.21 4.34639C24.5907 8.72707 24.5907 15.8296 20.21 20.2103C15.8293 24.5909 8.72683 24.5909 4.34615 20.2103C-0.0345396 15.8296 -0.0345396 8.72707 4.34615 4.34639C8.72683 -0.0342966 15.8293 -0.0342959 20.21 4.34639ZM21.2637 20.5566C25.6854 15.7638 25.5699 8.29203 20.9171 3.63928C16.1459 -1.13193 8.41025 -1.13193 3.63904 3.63928C-1.13217 8.41049 -1.13217 16.1461 3.63904 20.9174C8.29187 25.5702 15.7639 25.6856 20.5566 21.2637L30.8847 31.5918C31.08 31.7871 31.3966 31.7871 31.5918 31.5918C31.7871 31.3966 31.7871 31.08 31.5918 30.8847L21.2637 20.5566Z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="fav-btn">
-                                <svg class="icon" width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.9594 0.502118L10.9593 0.502118C8.0008 0.439732 5.1228 1.75907 3.24886 4.01416M10.9594 0.502118L25.0385 0.502117C27.9974 0.439751 30.8755 1.75906 32.7518 4.01437C36.274 8.25341 36.8906 15.7514 31.7426 19.9729L31.7297 19.9835L31.7176 19.9948L20.4547 30.5553L20.4547 30.5553C19.1116 31.8149 16.8866 31.8149 15.5435 30.5553L15.5435 30.5553L4.28013 19.9948L4.26806 19.9835L4.25527 19.973C-0.890628 15.7514 -0.273569 8.2532 3.24886 4.01416M10.9594 0.502118C13.3562 0.552534 15.7203 1.88846 17.615 4.15882L17.9988 4.61875M10.9594 0.502118L17.9988 4.61875M3.24886 4.01416L2.86431 3.6946L3.24886 4.01416ZM17.9988 4.61875L18.3827 4.15887M17.9988 4.61875L18.3827 4.15887M18.3827 4.15887C20.2779 1.88851 22.6416 0.552977 25.0384 0.502118L18.3827 4.15887Z" stroke="currentColor"/></svg>
-                            </button>
+                        <!-- Tablet Search + favorites -->
+                        <div class="header__tablet-actions">
+                            <button class="search-btn" type="button"><svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.21 4.34639C24.5907 8.72707 24.5907 15.8296 20.21 20.2103C15.8293 24.5909 8.72683 24.5909 4.34615 20.2103C-0.0345396 15.8296 -0.0345396 8.72707 4.34615 4.34639C8.72683 -0.0342966 15.8293 -0.0342959 20.21 4.34639ZM21.2637 20.5566C25.6854 15.7638 25.5699 8.29203 20.9171 3.63928C16.1459 -1.13193 8.41025 -1.13193 3.63904 3.63928C-1.13217 8.41049 -1.13217 16.1461 3.63904 20.9174C8.29187 25.5702 15.7639 25.6856 20.5566 21.2637L30.8847 31.5918C31.08 31.7871 31.3966 31.7871 31.5918 31.5918C31.7871 31.3966 31.7871 31.08 31.5918 30.8847L21.2637 20.5566Z" fill="currentColor"/></svg></button>
+                            <button class="fav-btn"><svg class="icon" width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.9594 0.502118L10.9593 0.502118C8.0008 0.439732 5.1228 1.75907 3.24886 4.01416M10.9594 0.502118L25.0385 0.502117C27.9974 0.439751 30.8755 1.75906 32.7518 4.01437C36.274 8.25341 36.8906 15.7514 31.7426 19.9729L31.7297 19.9835L31.7176 19.9948L20.4547 30.5553L20.4547 30.5553C19.1116 31.8149 16.8866 31.8149 15.5435 30.5553L15.5435 30.5553L4.28013 19.9948L4.26806 19.9835L4.25527 19.973C-0.890628 15.7514 -0.273569 8.2532 3.24886 4.01416M10.9594 0.502118C13.3562 0.552534 15.7203 1.88846 17.615 4.15882L17.9988 4.61875M10.9594 0.502118L17.9988 4.61875M3.24886 4.01416L2.86431 3.6946L3.24886 4.01416ZM17.9988 4.61875L18.3827 4.15887M17.9988 4.61875L18.3827 4.15887M18.3827 4.15887C20.2779 1.88851 22.6416 0.552977 25.0384 0.502118L18.3827 4.15887Z" stroke="currentColor"/></svg></button>
                         </div>
 
+                        <!-- Open Menu -->
                         <button data-burger-menu class="burger-btn" type="button">
                             <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5H30" stroke="currentColor" stroke-width="2"/><path d="M0 12.5H30" class="middle" stroke-width="2"/><path d="M0 23.5H30" stroke="currentColor" stroke-width="2"/></svg>
                         </button>
 
+                        <!-- Close Menu -->
                         <button  data-close-menu class="close-btn">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_843_23863)">
@@ -95,13 +100,14 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-
                         </button>
                     </div>
                 </div>
             </div>
 
+            <!-- Toggle Menu -->
             <div class="header__menu">
+                <!-- Main Pages -->
                 <ul class="pages-list">
                     <li class="page active">
                         <a href="index.html">Главная</a>
@@ -160,6 +166,7 @@
                     </li>
                 </ul>
 
+                <!-- Sub main Pages -->
                 <ul class="sub-pages">
                     <li class="page active">
                         <a href="index.html">По странам</a>
@@ -188,7 +195,7 @@
             </div>
         </div>
 
-        <!-- Menu -->
+        <!-- Advices on Open Menu -->
         <div class="header__container advices">
             Горячие объекты:
         </div>
