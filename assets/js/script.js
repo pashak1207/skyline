@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //HEADER ONSCROLL//
 
   const header = document.querySelector("header.header");
-  console.log(header);
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
@@ -29,4 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
   //END QUESTIONS SELECT//
+
+  const burgerBtnEl = document.querySelector('[data-burger-menu]');
+  burgerBtnEl.addEventListener('click', (e) => {
+    header?.classList.toggle("light");
+    header.classList.toggle('header--visible-menu');
+  })
 });
