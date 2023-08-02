@@ -29,9 +29,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   //END QUESTIONS SELECT//
 
+
+  // OPEN HEADER menu
   const burgerBtnEl = document.querySelector('[data-burger-menu]');
+  const closeBtnEl = document.querySelector('[data-close-menu]');
   burgerBtnEl.addEventListener('click', (e) => {
-    header?.classList.toggle("light");
-    header.classList.toggle('header--visible-menu');
-  })
+    header?.classList.add("light");
+    header.classList.add('header--visible-menu');
+    burgerBtnEl.classList.add('hidden');
+    closeBtnEl.classList.add('visible');
+
+    // Close Header Menu
+    closeBtnEl.addEventListener('click', (e) => {
+      header?.classList.remove("light");
+      header.classList.remove('header--visible-menu');
+      burgerBtnEl.classList.remove('hidden');
+      closeBtnEl.classList.remove('visible');
+    })
+  });
+
 });

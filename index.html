@@ -45,10 +45,21 @@
                     </nav>
 
                     <div class="header__right-bar">
-                        <select class="lang-select" name="lang" id="lang_select">
-                            <option>EUR</option>
-                            <option>USD</option>
-                        </select>
+                        <div class="select-wrapper">
+                            <label for="currency_select">Валюта:</label>
+                            <select class="select" name="currency_select" id="currency_select">
+                                <option>EUR</option>
+                                <option>USD</option>
+                            </select>
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="lang_select">Язык:</label>
+                            <select class="select" name="lang_select" id="lang_select">
+                                <option>RU</option>
+                                <option>EN</option>
+                            </select>
+                        </div>
 
                         <button class="consultation">
                             <img class="agent" src="assets/img/header/consultation.png" alt="Agent">
@@ -71,6 +82,20 @@
 
                         <button data-burger-menu class="burger-btn" type="button">
                             <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5H30" stroke="currentColor" stroke-width="2"/><path d="M0 12.5H30" class="middle" stroke-width="2"/><path d="M0 23.5H30" stroke="currentColor" stroke-width="2"/></svg>
+                        </button>
+
+                        <button  data-close-menu class="close-btn">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_843_23863)">
+                                    <path d="M8.00393 7.0098L13.6727 1.37202C13.7373 1.30851 13.7885 1.2328 13.8235 1.14928C13.8585 1.06577 13.8765 0.97612 13.8765 0.885568C13.8765 0.795016 13.8585 0.705369 13.8235 0.621853C13.7885 0.538337 13.7373 0.462621 13.6727 0.399119C13.4016 0.130087 12.9613 0.130087 12.6902 0.399119L7.02629 6.03209L1.30999 0.315161C1.03889 0.0433838 0.598571 0.0433838 0.32748 0.315161C0.0563892 0.587625 0.0563892 1.02863 0.32748 1.30041L6.03961 7.01323L0.306834 12.7143C0.0357429 12.9833 0.0357429 13.4189 0.306834 13.6872C0.577925 13.9562 1.01825 13.9562 1.28934 13.6872L7.01725 7.99093L12.7108 13.6852C12.9819 13.9569 13.4222 13.9569 13.6933 13.6852C13.9644 13.4127 13.9644 12.9717 13.6933 12.6999L8.00393 7.0098Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_843_23863">
+                                        <rect width="13.7931" height="13.7931" fill="white" transform="translate(0.103516 0.103516)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
                         </button>
                     </div>
                 </div>
