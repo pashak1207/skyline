@@ -28,16 +28,11 @@
     }
 
     .see-all {
-      color: #161616;
       margin-left: auto;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 183.333%;
-      text-decoration: underline;
     }
   }
 
-  &__items {
+  &__list {
     width: 100%;
     display: flex;
     gap: 18px;
@@ -45,7 +40,7 @@
   }
 
   &__item {
-    max-width: calc(calc(100% - 80px) / 6);
+    max-width: calc(calc(100% - 86px) / 6);
     overflow: hidden;
     width: 236px;
     height: 112px;
@@ -106,15 +101,72 @@
   }
   
   @media screen and (max-width: $screen-xlg - 1) {
+    &__head {
+      gap: 12px;
+    }
 
+    &__list {
+      gap: 10px;
+    }
+
+    &__item {
+      width: calc(calc(100% - 60px) / 6);
+    }
   }
 
   @media screen and (max-width: $screen-lg - 1) {
     padding: 0 42px;
     gap: 36px;
 
+    &__head {
+      align-items: flex-end;
+
+      .title {
+        max-width: 440px;
+        font-size: 36px;
+      }
+    }
+
     .hover-cursor {
       display: none;
+    }
+
+    &__list {
+      gap: 15px 20px;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: calc(calc(100% - 40px) / 3);
+      max-width: unset;
+    }
+  }
+
+  @media screen and (max-width: $screen-smd - 1) {
+    padding: 0 15px;
+    gap: 30px;
+
+    &__head {
+      flex-direction: column;
+      align-items: center;
+      
+      .title {
+        gap: 22px;
+        text-align: center;
+        font-size: 23px;
+      }
+
+      .see-all {
+        margin: 0;
+      }
+    }
+
+    &__list {
+      gap: 10px;
+    }
+
+    &__item {
+      width: calc((100% - 20px) / 2);
     }
   }
 }

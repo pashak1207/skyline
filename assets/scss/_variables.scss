@@ -118,6 +118,15 @@ h2 span{
   }
 }
 
+.see-all {
+  color: #161616;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 183.333%;
+  text-decoration: underline !important;
+  white-space: nowrap;
+}
+
 @media (max-width: 1700px) {
   .wrapper{
     max-width: 1350px;
