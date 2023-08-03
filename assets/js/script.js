@@ -48,4 +48,21 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   });
 
+  const listItem = document.querySelectorAll('.details-team__item');
+  const dataList = document.querySelectorAll('.details-team__data');
+
+  listItem[0].classList.add('active');
+  dataList[0].classList.add('active');
+
+  listItem.forEach((item) => {
+    item.addEventListener('click', function() {
+      const index = item.getAttribute("data-index");
+
+      listItem.forEach(item => item.classList.remove('active'));
+      dataList.forEach(item => item.classList.remove('active'));
+      item.classList.add('active');
+      dataList[index].classList.add('active');
+
+    })
+  })
 });
