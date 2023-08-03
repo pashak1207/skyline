@@ -1,6 +1,7 @@
 @import "../variables";
 
 .countries {
+  width: 100%;
   max-width: 1500px;
   padding: 0 10px;
   display: flex;
@@ -101,6 +102,19 @@
         opacity: 1;
         transition: opacity 0.3s;
       }
+    }
+  }
+  
+  @media screen and (max-width: $screen-xlg - 1) {
+
+  }
+
+  @media screen and (max-width: $screen-lg - 1) {
+    padding: 0 42px;
+    gap: 36px;
+
+    .hover-cursor {
+      display: none;
     }
   }
 }
