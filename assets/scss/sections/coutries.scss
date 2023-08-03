@@ -1,0 +1,106 @@
+@import "../variables";
+
+.countries {
+  max-width: 1500px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42px;
+
+  &__head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .title {
+      color: #161616;
+      font-size: 45px;
+      font-weight: 300;
+      line-height: 144.444%;
+      width: fit-content;
+
+      span {
+        color: #297FCA;
+      }
+    }
+
+    .see-all {
+      color: #161616;
+      margin-left: auto;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 183.333%;
+      text-decoration: underline;
+    }
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  &__item {
+    max-width: calc(calc(100% - 80px) / 6);
+    overflow: hidden;
+    width: 236px;
+    height: 112px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 6.3350701332092285px 19.005210876464844px 0 rgba(0, 0, 0, 0.06);
+    background: linear-gradient(120deg, #001A31 0%, #173A58 100%);
+
+    &:hover {
+      img{
+        opacity: 0;
+      }
+    }
+
+    &:after{
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      border-radius: 20px;
+      border: 1px solid  rgba(255, 255, 255, 0.15);
+      pointer-events: none;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      p {
+        text-align: center;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 25px;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+      }
+
+      img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+    }
+  }
+}

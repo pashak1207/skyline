@@ -31,6 +31,7 @@
     background-size: cover;
     border-radius: 0 0 30px 30px;
     overflow: hidden;
+    margin-bottom: 100px;
 
     &__content {
       width: 100%;
@@ -199,6 +200,7 @@
   @media screen and (max-width: $screen-lg - 1) {
     .hero {
       padding: 140px 42px 60px;
+      margin-bottom: 75px;
 
       &__content {
         gap: 70px;
