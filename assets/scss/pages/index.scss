@@ -30,6 +30,7 @@
     background-position: center;
     background-size: cover;
     border-radius: 0 0 30px 30px;
+    overflow: hidden;
 
     &__content {
       width: 100%;
@@ -237,11 +238,14 @@
 
           .item {
             min-width: 30%;
+          }
 
-            .name {
-              &::before {
-                font-size: 30px;
-              }
+          .item .name {
+            font-size: 30px;
+
+            &::before {
+              font-size: 30px;
+              left: -18px;
             }
           }
         }
@@ -277,29 +281,49 @@
         }
 
         .top-content .left-texts .subtitle {
-          margin-left: 30px;
+          margin-left: 16px;
           max-width: 243px;
           font-size: 16px;
+
+          &::before {
+            left: -14px;
+            font-size: 16px;
+          }
         }
 
         .top-content .advantages-list {
           width: 100%;
           flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: stretch;
-          gap: 40px 60px;
-          margin-left: 24px;
+          flex-wrap: nowrap;
+          gap: 40px;
+          overflow: hidden;
 
           .item {
-            min-width: 30%;
+            min-width: unset;
+          }
+
+          .item .name {
+            font-size: 24px;
+
+            &::before {
+              font-size: 24px;
+              width: 7px;
+              height: 16px;
+            }
+          }
+
+          .item .value {
+            font-size: 12px;
+            white-space: nowrap;
           }
         }
 
         .buttons-list {
-          flex-wrap: wrap;
+          flex-direction: column;
+          gap: 10px;
 
           .item {
-            width: calc(calc(100% - 10px) / 2);
+            width: 100%;
           }
         }
       }
