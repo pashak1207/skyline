@@ -65,4 +65,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
     })
   })
+
+  //popup funcional
+  const popupBtns = document.querySelectorAll('.qustion-popup__controls > button');
+  const popupItems = document.querySelectorAll('.qustion-popup__item');
+
+  popupBtns.forEach((item, i) => {
+    item.addEventListener('click', function() {
+      const background = getComputedStyle(item).backgroundImage;
+      const popupContent = popupItems[i].children[1];
+
+      if (background.slice(-10, -2) ===  'plus.svg') {
+        item.style.backgroundImage  = "url('./assets/img/clouse.svg')";
+        popupContent.style.opacity = '1';
+        popupContent.style.display = 'block';
+
+      } else {
+        item.style.backgroundImage  = "url('./assets/img/plus.svg')";
+        popupContent.style.opacity = '0';
+        popupItems[i].children[1].style.display = 'none';
+
+      }
+
+
+    })
+  })
+  //popup new-buildings
+  const buttonsNewBuilding = document.querySelectorAll('.new-buildings__button');
+  const lists = document.querySelectorAll('.new-buildings__block > ul');
+  let prevClick = null;
+
+  buttonsNewBuilding.forEach((item, i) => item.addEventListener('click', function() {
+    if (prevClick && prevClick !== item) {
+      prevClick.children[0].setAttribute('src', 'assets/img/popup-bottom.svg');
+      lists[i].classList.remove('active'); // Видаляємо клас .active з попереднього вікна
+    }
+
+    if (lists[i].classList.contains('active')) {
+      item.children[0].setAttribute('src', 'assets/img/popup-bottom.svg');
+      lists[i].classList.remove('active'); // Видаляємо клас .active з поточного вікна
+      prevClick = null;
+    } else {
+      lists[i].classList.add('active'); // Додаємо клас .active для відображення поточного вікна
+      item.children[0].setAttribute('src', 'assets/img/popup-top.svg');
+      prevClick = item;
+    }
+  }));
 });
