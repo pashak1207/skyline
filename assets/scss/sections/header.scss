@@ -400,7 +400,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
-    overflow: hidden;
 
     .pages-wrapper {
       width: 100%;
@@ -418,7 +417,6 @@
       border-radius: 15px;
       background: #FFF;
       box-shadow: 0 5px 19px 0 rgba(0, 0, 0, 0.07);
-      overflow: hidden;
       padding: 0 36px;
       height: 72px;
 
@@ -430,23 +428,43 @@
         height: 100%;
         position: relative;
         z-index: 2;
-        overflow: visible;
 
         a {
           color: #5C5C5C;
           font-size: 18px;
           font-weight: 400;
           line-height: 166%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           svg {
             color: #5C5C5C;
           }
         }
 
-        &--sub a {
-          display: flex;
-          align-items: center;
-          gap: 8px;
+        &--sub {
+          &.active {
+            a::after {
+              content: "";
+              position: absolute;
+              bottom: -9px;
+              width: 21px;
+              height: 21px;
+              left: 50%;
+              transform: translateX(-50%);
+              z-index: -1;
+              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path d="M0.638937 8.95747C-0.21298 9.80939 -0.212979 11.1906 0.638938 12.0425L8.95747 20.3611C9.80939 21.213 11.1906 21.213 12.0425 20.3611L20.3611 12.0425C21.213 11.1906 21.213 9.80939 20.3611 8.95747L12.0425 0.638937C11.1906 -0.21298 9.80939 -0.212979 8.95747 0.638938L0.638937 8.95747Z" fill="%23173A58"/></svg>');
+              background-repeat: no-repeat;
+            }
+          }
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
         }
 
         &.active {
@@ -553,8 +571,8 @@
 
       .consultation {
         position: absolute;
-        bottom: -20px;
-        right: 0;
+        bottom: -20.5px;
+        right: -70.5px;
         width: 664px;
         height: 150px;
         max-width: 50%;
