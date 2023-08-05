@@ -33,11 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // OPEN HEADER menu
   const burgerBtnEl = document.querySelector('[data-burger-menu]');
   const closeBtnEl = document.querySelector('[data-close-menu]');
+  const headerBackdropEl = document.querySelector('#header_backdrop');
   burgerBtnEl.addEventListener('click', (e) => {
     header?.classList.add("light");
     header.classList.add('header--visible-menu');
     burgerBtnEl.classList.add('hidden');
     closeBtnEl.classList.add('visible');
+    headerBackdropEl.classList.add('visible');
 
     // Close Header Menu
     closeBtnEl.addEventListener('click', (e) => {
@@ -45,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       header.classList.remove('header--visible-menu');
       burgerBtnEl.classList.remove('hidden');
       closeBtnEl.classList.remove('visible');
+      headerBackdropEl.classList.remove('visible');
     })
   });
 
