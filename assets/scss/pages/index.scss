@@ -280,28 +280,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 140px;
+    padding: 0 42px;
 
     .wrapper {
-      gap: 40px;
-    }
-
-    &__top {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &__title {
-      color: #161616;
-      font-size: 45px;
-      font-weight: 300;
-      line-height: 144.444%;
-      width: fit-content;
-
-      span {
-        color: #297FCA;
-      }
+      gap: 30px;
     }
 
     @media screen and (max-width: $screen-lg - 1) {
@@ -309,7 +291,10 @@
     }
 
     @media screen and (max-width: $screen-smd - 1) {
+      margin-right: -25px;
+      width: calc(100% + 25px);
       margin-bottom: 80px;
+      padding: 0 15px;
     }
   }
 
