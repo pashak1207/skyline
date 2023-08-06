@@ -8,6 +8,14 @@
   color: #FFF;
   max-width: 1820px;
   gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 100%;
 
   // All set color
   & > * {
@@ -606,6 +614,7 @@
     }
   }
 
+  // Advices list
   .advices {
     color: #161616;
 
@@ -749,7 +758,7 @@
       }
 
       .pages-list {
-        min-width: 220px;
+        min-width: 280px;
         width: fit-content;
         flex-direction: column;
         align-items: stretch;
@@ -776,20 +785,18 @@
               width: 100%;
               transform: unset;
             }
+          }
 
-            &::after {
-              content: "";
-              position: absolute;
-              right: -14px;
-              top: 50%;
-              transform: translateY(-50%);
-              width: 0;
-              height: 0;
-              border-style: solid;
-              border-width: 7.5px 0 7.5px 15px;
-              border-color: transparent transparent transparent  #173A58;
-              border-top-right-radius: 4px;
-              border-bottom-right-radius: 4px;
+          &--sub {
+            &.active {
+              a::after {
+                left: -9px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 21px;
+                height: 21px;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path d="M0.638937 8.95747C-0.21298 9.80939 -0.212979 11.1906 0.638938 12.0425L8.95747 20.3611C9.80939 21.213 11.1906 21.213 12.0425 20.3611L20.3611 12.0425C21.213 11.1906 21.213 9.80939 20.3611 8.95747L12.0425 0.638937C11.1906 -0.21298 9.80939 -0.212979 8.95747 0.638938L0.638937 8.95747Z" fill="%23173A58"/></svg>');
+              }
             }
           }
         }
@@ -806,98 +813,14 @@
       }
 
       .menu-footer {
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        gap: 190px;
-        position: relative;
-        padding-bottom: 30px;
-
-        .phone-section {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-
-          .title {
-            margin-bottom: 10px;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 175%;
-          }
-
-          .phone {
-            font-size: 30px;
-            font-weight: 300;
-            line-height: 133%;
-            opacity: 0.8;
-            color: #173A58;
-          }
-
-          .subtitle {
-            color: rgba(22, 22, 22, 0.70);
-            font-size: 16px;
-            line-height: 250% ;
-          }
-        }
-
-        .socials-section {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 20px;
-
-          .title {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 175%;
-          }
-
-          .socials-list {
-            display: flex;
-            align-items: stretch;
-            gap: 15px;
-
-            .item {
-              height: 60px;
-              width: 60px;
-            }
-          }
-        }
+        gap: 110px;
+        padding-bottom: 180px;
 
         .consultation {
-          position: absolute;
-          bottom: -20px;
-          right: 0;
+          bottom: -41px;
+          right: -50px;
           width: 664px;
-          height: 150px;
-          max-width: 50%;
-          z-index: 1;
-          border-radius: 50px 0;
-          background: linear-gradient(180deg, rgba(255, 0, 0, 0.00) 0%, rgba(147, 0, 0, 0.70) 100%), linear-gradient(90deg, #E81E39 0%, #DA0F2A 0.01%, #FE2F4B 48.96%, #DA0F2A 100%);
-
-          &__content {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-
-            .agent {
-              position: absolute;
-              left: -40px;
-              bottom: 0;
-              width: 180px;
-              z-index: 2;
-            }
-
-            .text {
-              color: #FFF;
-              font-size: 22px;
-              font-weight: 400;
-              line-height: 204.545%;
-            }
-          }
+          max-width: 100%;
         }
       }
     }
