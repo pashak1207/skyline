@@ -309,6 +309,7 @@
     </header>
 
     <main>
+        <!-- Hero Section(Index Only) -->
         <section class="hero">
             <div class="hero__content">
                 <div class="top-content">
@@ -363,62 +364,67 @@
             </div>
         </section>
 
+        <!-- Countries Section (reusable) -->
         <section class="countries">
-            <div class="countries__head">
-                <h2 class="title">Мы предлагаем недвижимость <span>в странах</span></h2>
+            <div class="wrapper">
+                <div class="countries__head">
+                    <h2 class="title">Мы предлагаем недвижимость <span>в странах</span></h2>
 
-                <div class="hover-cursor">
-                    <p><span>Наведите мышку,</span><br>и нажмите на карточку</p>
+                    <div class="hover-cursor">
+                        <p><span>Наведите мышку,</span><br>и нажмите на карточку</p>
+                    </div>
+
+                    <a class="see-all" href="#">Смотреть все</a>
                 </div>
 
-                <a class="see-all" href="#">Смотреть все</a>
-            </div>
-
-            <div class="countries__list">
-                <div class="countries__item">
-                    <a href="#">
-                        <img src="assets/img/countries/country_1.jpg" alt="country">
-                        <p>Северный Кипр</p>
-                    </a>
-                </div>
-                <div class="countries__item">
-                    <a href="#">
-                        <img src="assets/img/countries/country_2.jpg" alt="country">
-                        <p>ОАЭ</p>
-                    </a>
-                </div>
-                <div class="countries__item">
-                    <a href="#">
-                        <img src="assets/img/countries/country_3.jpg" alt="country">
-                        <p>CША</p>
-                    </a>
-                </div>
-                <div class="countries__item">
-                    <a href="#">
-                        <img src="assets/img/countries/country_4.jpg" alt="country">
-                        <p>Грузия</p>
-                    </a>
-                </div>
-                <div class="countries__item">
-                    <a href="#">
-                        <img src="assets/img/countries/country_5.jpg" alt="country">
-                        <p>Испания</p>
-                    </a>
-                </div>
-                <div class="countries__item">
-                    <a href="#">
-                        <img src="assets/img/countries/country_6.jpg" alt="country">
-                        <p>Турция</p>
-                    </a>
+                <div class="countries__list">
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_1.jpg" alt="country">
+                            <p>Северный Кипр</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_2.jpg" alt="country">
+                            <p>ОАЭ</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_3.jpg" alt="country">
+                            <p>CША</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_4.jpg" alt="country">
+                            <p>Грузия</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_5.jpg" alt="country">
+                            <p>Испания</p>
+                        </a>
+                    </div>
+                    <div class="countries__item">
+                        <a href="#">
+                            <img src="assets/img/countries/country_6.jpg" alt="country">
+                            <p>Турция</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Objects, __top changed, content and cards reusable -->
         <section class="objects">
             <div class="objects__top">
                 <h2>Выберите <span>подходящий объект</span></h2>
                 <a href="#">Смотреть все</a>
             </div>
+
             <div class="objects__tabset">
                 <input type="radio" name="tabset" id="tab1" checked>
                 <label for="tab1">Акционные предложения</label>
@@ -1460,7 +1466,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -2476,6 +2481,7 @@
             </div>
         </section>
     </main>
+
     <script src="./assets/js/script.js"></script>
 
     <!-- Menu Backdrop -->
