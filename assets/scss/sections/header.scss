@@ -790,7 +790,7 @@
           &--sub {
             &.active {
               a::after {
-                left: -9px;
+                right: -9px;
                 top: 50%;
                 transform: translateY(-50%);
                 width: 21px;
@@ -857,6 +857,20 @@
 
     &__tablet-actions {
       display: flex;
+    }
+
+    &__menu {
+      .pages-list {
+        min-width: 160px;
+
+        .page a {
+          font-size: 13px;
+        }
+      }
+
+      .sub-pages .page a {
+        font-size: 13px;
+      }
     }
   }
 
