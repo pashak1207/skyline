@@ -137,6 +137,25 @@ legend {
   font-size: 18px;
   font-weight: 500;
   line-height: 183.333%;
-  text-decoration: underline !important;
   white-space: nowrap;
+  display: inline-block;
+  position: relative;
+
+  &:hover{
+    &:after{
+      width: calc(100% + 38px);
+      left: -19px;
+    }
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 100%;
+    background: rgba(0, 26, 49, 0.40);
+    transition: width 0.3s, left 0.3s;
+  }
 }

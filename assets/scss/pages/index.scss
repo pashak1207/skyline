@@ -226,15 +226,90 @@
         margin-left: auto;
       }
     }
+
+    @media screen and (max-width: $screen-xlg - 1) {
+      &__head {
+        gap: 12px;
+      }
+    }
+
+    @media screen and (max-width: $screen-lg - 1) {
+      margin-bottom: 100px;
+
+      .wrapper {
+        padding: 0 42px;
+        gap: 36px;
+      }
+
+      &__head {
+        align-items: flex-end;
+
+        .title {
+          max-width: 440px;
+          font-size: 36px;
+        }
+      }
+    }
+
+    @media screen and (max-width: $screen-smd - 1) {
+      margin-bottom: 80px;
+
+      .wrapper {
+        padding: 0 15px;
+        gap: 30px;
+      }
+
+      &__head {
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+          gap: 22px;
+          text-align: center;
+          font-size: 23px;
+        }
+
+        .see-all {
+          margin: 0;
+        }
+      }
+    }
   }
 
   .objects {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
 
-  }
+    .wrapper {
+      gap: 40px;
+    }
 
-  @media screen and (max-width: $screen-xlg - 1) {
-    .countries .countries__head {
-      gap: 12px;
+    &__top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      color: #161616;
+      font-size: 45px;
+      font-weight: 300;
+      line-height: 144.444%;
+      width: fit-content;
+
+      span {
+        color: #297FCA;
+      }
+    }
+
+    @media screen and (max-width: $screen-lg - 1) {
+      margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: $screen-smd - 1) {
+      margin-bottom: 80px;
     }
   }
 
@@ -299,24 +374,6 @@
           .item {
             width: calc(calc(100% - 10px) / 2);
           }
-        }
-      }
-    }
-
-    .countries {
-      margin-bottom: 100px;
-
-      .wrapper {
-        padding: 0 42px;
-        gap: 36px;
-      }
-
-      &__head {
-        align-items: flex-end;
-
-        .title {
-          max-width: 440px;
-          font-size: 36px;
         }
       }
     }
@@ -386,30 +443,6 @@
           .item {
             width: 100%;
           }
-        }
-      }
-    }
-
-    .countries {
-      margin-bottom: 80px;
-
-      .wrapper {
-        padding: 0 15px;
-        gap: 30px;
-      }
-
-      &__head {
-        flex-direction: column;
-        align-items: center;
-
-        .title {
-          gap: 22px;
-          text-align: center;
-          font-size: 23px;
-        }
-
-        .see-all {
-          margin: 0;
         }
       }
     }

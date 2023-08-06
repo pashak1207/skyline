@@ -1,43 +1,5 @@
 .objects{
   width: 100%;
-  padding-top: 76px;
-  padding-bottom: 72px;
-
-  .wrapper {
-    gap: 40px;
-  }
-
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    a {
-      display: inline-block;
-      position: relative;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 30px;
-
-      &:hover{
-        &:after{
-          width: calc(100% + 38px);
-          left: -19px;
-        }
-      }
-
-      &:after{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        height: 1px;
-        width: 100%;
-        background: rgba(0, 26, 49, 0.40);
-        transition: width 0.3s, left 0.3s;
-      }
-    }
-  }
 
   &__tabset > input[type="radio"] {
     opacity: 0;
