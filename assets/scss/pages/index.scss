@@ -199,8 +199,6 @@
 
   .countries {
     .wrapper {
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
       gap: 42px;
     }
@@ -229,7 +227,9 @@
     }
   }
 
-  .objects {}
+  .objects {
+
+  }
 
   @media screen and (max-width: $screen-xlg - 1) {
     .countries .countries__head {

@@ -1,14 +1,16 @@
 .objects{
   width: 100%;
-  max-width: 1500px;
   padding-top: 76px;
   padding-bottom: 72px;
+
+  .wrapper {
+    gap: 40px;
+  }
 
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
 
     a {
       display: inline-block;
